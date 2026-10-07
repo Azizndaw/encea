@@ -1,0 +1,1077 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .bg-band1 { fill: #F4E8C1; }
+      .bg-band2 { fill: #E5C158; }
+      .bg-band3 { fill: #FAF2D6; }
+      .bg-band4 { fill: #E8AF46; }
+      .bg-band5 { fill: #F5E5B8; }
+      .bg-band6 { fill: #FDF9E7; }
+      .stroke-main { stroke: #021632; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .stroke-gold { stroke: #8C6D1F; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .fill-main { fill: #021632; }
+      .fill-gold { fill: #8C6D1F; }
+    </style>
+  </defs>
+
+  <!-- BAND 1: CROSSHATCH MESH (Y: 0-20) -->
+  <rect x="0" y="0" width="1200" height="20" class="bg-band1" />
+  <line x1="0" y1="5" x2="1200" y2="5" class="stroke-gold" />
+  <line x1="0" y1="15" x2="1200" y2="15" class="stroke-gold" />
+<line x1="0" y1="2" x2="0" y2="18" class="stroke-main" />
+<line x1="4" y1="2" x2="4" y2="18" class="stroke-main" />
+<line x1="15" y1="2" x2="15" y2="18" class="stroke-main" />
+<line x1="19" y1="2" x2="19" y2="18" class="stroke-main" />
+<line x1="30" y1="2" x2="30" y2="18" class="stroke-main" />
+<line x1="34" y1="2" x2="34" y2="18" class="stroke-main" />
+<line x1="45" y1="2" x2="45" y2="18" class="stroke-main" />
+<line x1="49" y1="2" x2="49" y2="18" class="stroke-main" />
+<line x1="60" y1="2" x2="60" y2="18" class="stroke-main" />
+<line x1="64" y1="2" x2="64" y2="18" class="stroke-main" />
+<line x1="75" y1="2" x2="75" y2="18" class="stroke-main" />
+<line x1="79" y1="2" x2="79" y2="18" class="stroke-main" />
+<line x1="90" y1="2" x2="90" y2="18" class="stroke-main" />
+<line x1="94" y1="2" x2="94" y2="18" class="stroke-main" />
+<line x1="105" y1="2" x2="105" y2="18" class="stroke-main" />
+<line x1="109" y1="2" x2="109" y2="18" class="stroke-main" />
+<line x1="120" y1="2" x2="120" y2="18" class="stroke-main" />
+<line x1="124" y1="2" x2="124" y2="18" class="stroke-main" />
+<line x1="135" y1="2" x2="135" y2="18" class="stroke-main" />
+<line x1="139" y1="2" x2="139" y2="18" class="stroke-main" />
+<line x1="150" y1="2" x2="150" y2="18" class="stroke-main" />
+<line x1="154" y1="2" x2="154" y2="18" class="stroke-main" />
+<line x1="165" y1="2" x2="165" y2="18" class="stroke-main" />
+<line x1="169" y1="2" x2="169" y2="18" class="stroke-main" />
+<line x1="180" y1="2" x2="180" y2="18" class="stroke-main" />
+<line x1="184" y1="2" x2="184" y2="18" class="stroke-main" />
+<line x1="195" y1="2" x2="195" y2="18" class="stroke-main" />
+<line x1="199" y1="2" x2="199" y2="18" class="stroke-main" />
+<line x1="210" y1="2" x2="210" y2="18" class="stroke-main" />
+<line x1="214" y1="2" x2="214" y2="18" class="stroke-main" />
+<line x1="225" y1="2" x2="225" y2="18" class="stroke-main" />
+<line x1="229" y1="2" x2="229" y2="18" class="stroke-main" />
+<line x1="240" y1="2" x2="240" y2="18" class="stroke-main" />
+<line x1="244" y1="2" x2="244" y2="18" class="stroke-main" />
+<line x1="255" y1="2" x2="255" y2="18" class="stroke-main" />
+<line x1="259" y1="2" x2="259" y2="18" class="stroke-main" />
+<line x1="270" y1="2" x2="270" y2="18" class="stroke-main" />
+<line x1="274" y1="2" x2="274" y2="18" class="stroke-main" />
+<line x1="285" y1="2" x2="285" y2="18" class="stroke-main" />
+<line x1="289" y1="2" x2="289" y2="18" class="stroke-main" />
+<line x1="300" y1="2" x2="300" y2="18" class="stroke-main" />
+<line x1="304" y1="2" x2="304" y2="18" class="stroke-main" />
+<line x1="315" y1="2" x2="315" y2="18" class="stroke-main" />
+<line x1="319" y1="2" x2="319" y2="18" class="stroke-main" />
+<line x1="330" y1="2" x2="330" y2="18" class="stroke-main" />
+<line x1="334" y1="2" x2="334" y2="18" class="stroke-main" />
+<line x1="345" y1="2" x2="345" y2="18" class="stroke-main" />
+<line x1="349" y1="2" x2="349" y2="18" class="stroke-main" />
+<line x1="360" y1="2" x2="360" y2="18" class="stroke-main" />
+<line x1="364" y1="2" x2="364" y2="18" class="stroke-main" />
+<line x1="375" y1="2" x2="375" y2="18" class="stroke-main" />
+<line x1="379" y1="2" x2="379" y2="18" class="stroke-main" />
+<line x1="390" y1="2" x2="390" y2="18" class="stroke-main" />
+<line x1="394" y1="2" x2="394" y2="18" class="stroke-main" />
+<line x1="405" y1="2" x2="405" y2="18" class="stroke-main" />
+<line x1="409" y1="2" x2="409" y2="18" class="stroke-main" />
+<line x1="420" y1="2" x2="420" y2="18" class="stroke-main" />
+<line x1="424" y1="2" x2="424" y2="18" class="stroke-main" />
+<line x1="435" y1="2" x2="435" y2="18" class="stroke-main" />
+<line x1="439" y1="2" x2="439" y2="18" class="stroke-main" />
+<line x1="450" y1="2" x2="450" y2="18" class="stroke-main" />
+<line x1="454" y1="2" x2="454" y2="18" class="stroke-main" />
+<line x1="465" y1="2" x2="465" y2="18" class="stroke-main" />
+<line x1="469" y1="2" x2="469" y2="18" class="stroke-main" />
+<line x1="480" y1="2" x2="480" y2="18" class="stroke-main" />
+<line x1="484" y1="2" x2="484" y2="18" class="stroke-main" />
+<line x1="495" y1="2" x2="495" y2="18" class="stroke-main" />
+<line x1="499" y1="2" x2="499" y2="18" class="stroke-main" />
+<line x1="510" y1="2" x2="510" y2="18" class="stroke-main" />
+<line x1="514" y1="2" x2="514" y2="18" class="stroke-main" />
+<line x1="525" y1="2" x2="525" y2="18" class="stroke-main" />
+<line x1="529" y1="2" x2="529" y2="18" class="stroke-main" />
+<line x1="540" y1="2" x2="540" y2="18" class="stroke-main" />
+<line x1="544" y1="2" x2="544" y2="18" class="stroke-main" />
+<line x1="555" y1="2" x2="555" y2="18" class="stroke-main" />
+<line x1="559" y1="2" x2="559" y2="18" class="stroke-main" />
+<line x1="570" y1="2" x2="570" y2="18" class="stroke-main" />
+<line x1="574" y1="2" x2="574" y2="18" class="stroke-main" />
+<line x1="585" y1="2" x2="585" y2="18" class="stroke-main" />
+<line x1="589" y1="2" x2="589" y2="18" class="stroke-main" />
+<line x1="600" y1="2" x2="600" y2="18" class="stroke-main" />
+<line x1="604" y1="2" x2="604" y2="18" class="stroke-main" />
+<line x1="615" y1="2" x2="615" y2="18" class="stroke-main" />
+<line x1="619" y1="2" x2="619" y2="18" class="stroke-main" />
+<line x1="630" y1="2" x2="630" y2="18" class="stroke-main" />
+<line x1="634" y1="2" x2="634" y2="18" class="stroke-main" />
+<line x1="645" y1="2" x2="645" y2="18" class="stroke-main" />
+<line x1="649" y1="2" x2="649" y2="18" class="stroke-main" />
+<line x1="660" y1="2" x2="660" y2="18" class="stroke-main" />
+<line x1="664" y1="2" x2="664" y2="18" class="stroke-main" />
+<line x1="675" y1="2" x2="675" y2="18" class="stroke-main" />
+<line x1="679" y1="2" x2="679" y2="18" class="stroke-main" />
+<line x1="690" y1="2" x2="690" y2="18" class="stroke-main" />
+<line x1="694" y1="2" x2="694" y2="18" class="stroke-main" />
+<line x1="705" y1="2" x2="705" y2="18" class="stroke-main" />
+<line x1="709" y1="2" x2="709" y2="18" class="stroke-main" />
+<line x1="720" y1="2" x2="720" y2="18" class="stroke-main" />
+<line x1="724" y1="2" x2="724" y2="18" class="stroke-main" />
+<line x1="735" y1="2" x2="735" y2="18" class="stroke-main" />
+<line x1="739" y1="2" x2="739" y2="18" class="stroke-main" />
+<line x1="750" y1="2" x2="750" y2="18" class="stroke-main" />
+<line x1="754" y1="2" x2="754" y2="18" class="stroke-main" />
+<line x1="765" y1="2" x2="765" y2="18" class="stroke-main" />
+<line x1="769" y1="2" x2="769" y2="18" class="stroke-main" />
+<line x1="780" y1="2" x2="780" y2="18" class="stroke-main" />
+<line x1="784" y1="2" x2="784" y2="18" class="stroke-main" />
+<line x1="795" y1="2" x2="795" y2="18" class="stroke-main" />
+<line x1="799" y1="2" x2="799" y2="18" class="stroke-main" />
+<line x1="810" y1="2" x2="810" y2="18" class="stroke-main" />
+<line x1="814" y1="2" x2="814" y2="18" class="stroke-main" />
+<line x1="825" y1="2" x2="825" y2="18" class="stroke-main" />
+<line x1="829" y1="2" x2="829" y2="18" class="stroke-main" />
+<line x1="840" y1="2" x2="840" y2="18" class="stroke-main" />
+<line x1="844" y1="2" x2="844" y2="18" class="stroke-main" />
+<line x1="855" y1="2" x2="855" y2="18" class="stroke-main" />
+<line x1="859" y1="2" x2="859" y2="18" class="stroke-main" />
+<line x1="870" y1="2" x2="870" y2="18" class="stroke-main" />
+<line x1="874" y1="2" x2="874" y2="18" class="stroke-main" />
+<line x1="885" y1="2" x2="885" y2="18" class="stroke-main" />
+<line x1="889" y1="2" x2="889" y2="18" class="stroke-main" />
+<line x1="900" y1="2" x2="900" y2="18" class="stroke-main" />
+<line x1="904" y1="2" x2="904" y2="18" class="stroke-main" />
+<line x1="915" y1="2" x2="915" y2="18" class="stroke-main" />
+<line x1="919" y1="2" x2="919" y2="18" class="stroke-main" />
+<line x1="930" y1="2" x2="930" y2="18" class="stroke-main" />
+<line x1="934" y1="2" x2="934" y2="18" class="stroke-main" />
+<line x1="945" y1="2" x2="945" y2="18" class="stroke-main" />
+<line x1="949" y1="2" x2="949" y2="18" class="stroke-main" />
+<line x1="960" y1="2" x2="960" y2="18" class="stroke-main" />
+<line x1="964" y1="2" x2="964" y2="18" class="stroke-main" />
+<line x1="975" y1="2" x2="975" y2="18" class="stroke-main" />
+<line x1="979" y1="2" x2="979" y2="18" class="stroke-main" />
+<line x1="990" y1="2" x2="990" y2="18" class="stroke-main" />
+<line x1="994" y1="2" x2="994" y2="18" class="stroke-main" />
+<line x1="1005" y1="2" x2="1005" y2="18" class="stroke-main" />
+<line x1="1009" y1="2" x2="1009" y2="18" class="stroke-main" />
+<line x1="1020" y1="2" x2="1020" y2="18" class="stroke-main" />
+<line x1="1024" y1="2" x2="1024" y2="18" class="stroke-main" />
+<line x1="1035" y1="2" x2="1035" y2="18" class="stroke-main" />
+<line x1="1039" y1="2" x2="1039" y2="18" class="stroke-main" />
+<line x1="1050" y1="2" x2="1050" y2="18" class="stroke-main" />
+<line x1="1054" y1="2" x2="1054" y2="18" class="stroke-main" />
+<line x1="1065" y1="2" x2="1065" y2="18" class="stroke-main" />
+<line x1="1069" y1="2" x2="1069" y2="18" class="stroke-main" />
+<line x1="1080" y1="2" x2="1080" y2="18" class="stroke-main" />
+<line x1="1084" y1="2" x2="1084" y2="18" class="stroke-main" />
+<line x1="1095" y1="2" x2="1095" y2="18" class="stroke-main" />
+<line x1="1099" y1="2" x2="1099" y2="18" class="stroke-main" />
+<line x1="1110" y1="2" x2="1110" y2="18" class="stroke-main" />
+<line x1="1114" y1="2" x2="1114" y2="18" class="stroke-main" />
+<line x1="1125" y1="2" x2="1125" y2="18" class="stroke-main" />
+<line x1="1129" y1="2" x2="1129" y2="18" class="stroke-main" />
+<line x1="1140" y1="2" x2="1140" y2="18" class="stroke-main" />
+<line x1="1144" y1="2" x2="1144" y2="18" class="stroke-main" />
+<line x1="1155" y1="2" x2="1155" y2="18" class="stroke-main" />
+<line x1="1159" y1="2" x2="1159" y2="18" class="stroke-main" />
+<line x1="1170" y1="2" x2="1170" y2="18" class="stroke-main" />
+<line x1="1174" y1="2" x2="1174" y2="18" class="stroke-main" />
+<line x1="1185" y1="2" x2="1185" y2="18" class="stroke-main" />
+<line x1="1189" y1="2" x2="1189" y2="18" class="stroke-main" />
+  <!-- BAND 2: ROYAL FRETWORK / GREEK KEY (Y: 20-40) -->
+  <rect x="0" y="20" width="1200" height="20" class="bg-band2" />
+  <line x1="0" y1="20" x2="1200" y2="20" stroke="#021632" stroke-width="2" />
+<path d="M0 36 L0 24 L10 24 L10 32 L5 32 L5 28 L15 28 L15 36 L25 36 L25 24 L30 24" class="stroke-main" />
+<path d="M30 36 L30 24 L40 24 L40 32 L35 32 L35 28 L45 28 L45 36 L55 36 L55 24 L60 24" class="stroke-main" />
+<path d="M60 36 L60 24 L70 24 L70 32 L65 32 L65 28 L75 28 L75 36 L85 36 L85 24 L90 24" class="stroke-main" />
+<path d="M90 36 L90 24 L100 24 L100 32 L95 32 L95 28 L105 28 L105 36 L115 36 L115 24 L120 24" class="stroke-main" />
+<path d="M120 36 L120 24 L130 24 L130 32 L125 32 L125 28 L135 28 L135 36 L145 36 L145 24 L150 24" class="stroke-main" />
+<path d="M150 36 L150 24 L160 24 L160 32 L155 32 L155 28 L165 28 L165 36 L175 36 L175 24 L180 24" class="stroke-main" />
+<path d="M180 36 L180 24 L190 24 L190 32 L185 32 L185 28 L195 28 L195 36 L205 36 L205 24 L210 24" class="stroke-main" />
+<path d="M210 36 L210 24 L220 24 L220 32 L215 32 L215 28 L225 28 L225 36 L235 36 L235 24 L240 24" class="stroke-main" />
+<path d="M240 36 L240 24 L250 24 L250 32 L245 32 L245 28 L255 28 L255 36 L265 36 L265 24 L270 24" class="stroke-main" />
+<path d="M270 36 L270 24 L280 24 L280 32 L275 32 L275 28 L285 28 L285 36 L295 36 L295 24 L300 24" class="stroke-main" />
+<path d="M300 36 L300 24 L310 24 L310 32 L305 32 L305 28 L315 28 L315 36 L325 36 L325 24 L330 24" class="stroke-main" />
+<path d="M330 36 L330 24 L340 24 L340 32 L335 32 L335 28 L345 28 L345 36 L355 36 L355 24 L360 24" class="stroke-main" />
+<path d="M360 36 L360 24 L370 24 L370 32 L365 32 L365 28 L375 28 L375 36 L385 36 L385 24 L390 24" class="stroke-main" />
+<path d="M390 36 L390 24 L400 24 L400 32 L395 32 L395 28 L405 28 L405 36 L415 36 L415 24 L420 24" class="stroke-main" />
+<path d="M420 36 L420 24 L430 24 L430 32 L425 32 L425 28 L435 28 L435 36 L445 36 L445 24 L450 24" class="stroke-main" />
+<path d="M450 36 L450 24 L460 24 L460 32 L455 32 L455 28 L465 28 L465 36 L475 36 L475 24 L480 24" class="stroke-main" />
+<path d="M480 36 L480 24 L490 24 L490 32 L485 32 L485 28 L495 28 L495 36 L505 36 L505 24 L510 24" class="stroke-main" />
+<path d="M510 36 L510 24 L520 24 L520 32 L515 32 L515 28 L525 28 L525 36 L535 36 L535 24 L540 24" class="stroke-main" />
+<path d="M540 36 L540 24 L550 24 L550 32 L545 32 L545 28 L555 28 L555 36 L565 36 L565 24 L570 24" class="stroke-main" />
+<path d="M570 36 L570 24 L580 24 L580 32 L575 32 L575 28 L585 28 L585 36 L595 36 L595 24 L600 24" class="stroke-main" />
+<path d="M600 36 L600 24 L610 24 L610 32 L605 32 L605 28 L615 28 L615 36 L625 36 L625 24 L630 24" class="stroke-main" />
+<path d="M630 36 L630 24 L640 24 L640 32 L635 32 L635 28 L645 28 L645 36 L655 36 L655 24 L660 24" class="stroke-main" />
+<path d="M660 36 L660 24 L670 24 L670 32 L665 32 L665 28 L675 28 L675 36 L685 36 L685 24 L690 24" class="stroke-main" />
+<path d="M690 36 L690 24 L700 24 L700 32 L695 32 L695 28 L705 28 L705 36 L715 36 L715 24 L720 24" class="stroke-main" />
+<path d="M720 36 L720 24 L730 24 L730 32 L725 32 L725 28 L735 28 L735 36 L745 36 L745 24 L750 24" class="stroke-main" />
+<path d="M750 36 L750 24 L760 24 L760 32 L755 32 L755 28 L765 28 L765 36 L775 36 L775 24 L780 24" class="stroke-main" />
+<path d="M780 36 L780 24 L790 24 L790 32 L785 32 L785 28 L795 28 L795 36 L805 36 L805 24 L810 24" class="stroke-main" />
+<path d="M810 36 L810 24 L820 24 L820 32 L815 32 L815 28 L825 28 L825 36 L835 36 L835 24 L840 24" class="stroke-main" />
+<path d="M840 36 L840 24 L850 24 L850 32 L845 32 L845 28 L855 28 L855 36 L865 36 L865 24 L870 24" class="stroke-main" />
+<path d="M870 36 L870 24 L880 24 L880 32 L875 32 L875 28 L885 28 L885 36 L895 36 L895 24 L900 24" class="stroke-main" />
+<path d="M900 36 L900 24 L910 24 L910 32 L905 32 L905 28 L915 28 L915 36 L925 36 L925 24 L930 24" class="stroke-main" />
+<path d="M930 36 L930 24 L940 24 L940 32 L935 32 L935 28 L945 28 L945 36 L955 36 L955 24 L960 24" class="stroke-main" />
+<path d="M960 36 L960 24 L970 24 L970 32 L965 32 L965 28 L975 28 L975 36 L985 36 L985 24 L990 24" class="stroke-main" />
+<path d="M990 36 L990 24 L1000 24 L1000 32 L995 32 L995 28 L1005 28 L1005 36 L1015 36 L1015 24 L1020 24" class="stroke-main" />
+<path d="M1020 36 L1020 24 L1030 24 L1030 32 L1025 32 L1025 28 L1035 28 L1035 36 L1045 36 L1045 24 L1050 24" class="stroke-main" />
+<path d="M1050 36 L1050 24 L1060 24 L1060 32 L1055 32 L1055 28 L1065 28 L1065 36 L1075 36 L1075 24 L1080 24" class="stroke-main" />
+<path d="M1080 36 L1080 24 L1090 24 L1090 32 L1085 32 L1085 28 L1095 28 L1095 36 L1105 36 L1105 24 L1110 24" class="stroke-main" />
+<path d="M1110 36 L1110 24 L1120 24 L1120 32 L1115 32 L1115 28 L1125 28 L1125 36 L1135 36 L1135 24 L1140 24" class="stroke-main" />
+<path d="M1140 36 L1140 24 L1150 24 L1150 32 L1145 32 L1145 28 L1155 28 L1155 36 L1165 36 L1165 24 L1170 24" class="stroke-main" />
+<path d="M1170 36 L1170 24 L1180 24 L1180 32 L1175 32 L1175 28 L1185 28 L1185 36 L1195 36 L1195 24 L1200 24" class="stroke-main" />
+  <!-- BAND 3: ADINKRA SYMBOLS & SPIRALS (Y: 40-70) -->
+  <rect x="0" y="40" width="1200" height="30" class="bg-band3" />
+  <line x1="0" y1="40" x2="1200" y2="40" stroke="#8C6D1F" stroke-width="2" />
+
+      <path d="M10 45 C5 45 5 55 10 55 C15 55 15 45 10 45 Z" class="stroke-main" />
+      <line x1="10" y1="43" x2="10" y2="67" class="stroke-main" />
+      <path d="M4 50 L16 50" class="stroke-main" />
+      <path d="M2 62 C6 58 14 58 18 62" class="stroke-main" />
+      <circle cx="10" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M30 55 C25 50 25 44 30 44 C35 44 35 52 28 52" class="stroke-main" />
+      <circle cx="30" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M50 45 C45 45 45 55 50 55 C55 55 55 45 50 45 Z" class="stroke-main" />
+      <line x1="50" y1="43" x2="50" y2="67" class="stroke-main" />
+      <path d="M44 50 L56 50" class="stroke-main" />
+      <path d="M42 62 C46 58 54 58 58 62" class="stroke-main" />
+      <circle cx="50" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M70 55 C65 50 65 44 70 44 C75 44 75 52 68 52" class="stroke-main" />
+      <circle cx="70" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M90 45 C85 45 85 55 90 55 C95 55 95 45 90 45 Z" class="stroke-main" />
+      <line x1="90" y1="43" x2="90" y2="67" class="stroke-main" />
+      <path d="M84 50 L96 50" class="stroke-main" />
+      <path d="M82 62 C86 58 94 58 98 62" class="stroke-main" />
+      <circle cx="90" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M110 55 C105 50 105 44 110 44 C115 44 115 52 108 52" class="stroke-main" />
+      <circle cx="110" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M130 45 C125 45 125 55 130 55 C135 55 135 45 130 45 Z" class="stroke-main" />
+      <line x1="130" y1="43" x2="130" y2="67" class="stroke-main" />
+      <path d="M124 50 L136 50" class="stroke-main" />
+      <path d="M122 62 C126 58 134 58 138 62" class="stroke-main" />
+      <circle cx="130" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M150 55 C145 50 145 44 150 44 C155 44 155 52 148 52" class="stroke-main" />
+      <circle cx="150" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M170 45 C165 45 165 55 170 55 C175 55 175 45 170 45 Z" class="stroke-main" />
+      <line x1="170" y1="43" x2="170" y2="67" class="stroke-main" />
+      <path d="M164 50 L176 50" class="stroke-main" />
+      <path d="M162 62 C166 58 174 58 178 62" class="stroke-main" />
+      <circle cx="170" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M190 55 C185 50 185 44 190 44 C195 44 195 52 188 52" class="stroke-main" />
+      <circle cx="190" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M210 45 C205 45 205 55 210 55 C215 55 215 45 210 45 Z" class="stroke-main" />
+      <line x1="210" y1="43" x2="210" y2="67" class="stroke-main" />
+      <path d="M204 50 L216 50" class="stroke-main" />
+      <path d="M202 62 C206 58 214 58 218 62" class="stroke-main" />
+      <circle cx="210" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M230 55 C225 50 225 44 230 44 C235 44 235 52 228 52" class="stroke-main" />
+      <circle cx="230" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M250 45 C245 45 245 55 250 55 C255 55 255 45 250 45 Z" class="stroke-main" />
+      <line x1="250" y1="43" x2="250" y2="67" class="stroke-main" />
+      <path d="M244 50 L256 50" class="stroke-main" />
+      <path d="M242 62 C246 58 254 58 258 62" class="stroke-main" />
+      <circle cx="250" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M270 55 C265 50 265 44 270 44 C275 44 275 52 268 52" class="stroke-main" />
+      <circle cx="270" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M290 45 C285 45 285 55 290 55 C295 55 295 45 290 45 Z" class="stroke-main" />
+      <line x1="290" y1="43" x2="290" y2="67" class="stroke-main" />
+      <path d="M284 50 L296 50" class="stroke-main" />
+      <path d="M282 62 C286 58 294 58 298 62" class="stroke-main" />
+      <circle cx="290" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M310 55 C305 50 305 44 310 44 C315 44 315 52 308 52" class="stroke-main" />
+      <circle cx="310" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M330 45 C325 45 325 55 330 55 C335 55 335 45 330 45 Z" class="stroke-main" />
+      <line x1="330" y1="43" x2="330" y2="67" class="stroke-main" />
+      <path d="M324 50 L336 50" class="stroke-main" />
+      <path d="M322 62 C326 58 334 58 338 62" class="stroke-main" />
+      <circle cx="330" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M350 55 C345 50 345 44 350 44 C355 44 355 52 348 52" class="stroke-main" />
+      <circle cx="350" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M370 45 C365 45 365 55 370 55 C375 55 375 45 370 45 Z" class="stroke-main" />
+      <line x1="370" y1="43" x2="370" y2="67" class="stroke-main" />
+      <path d="M364 50 L376 50" class="stroke-main" />
+      <path d="M362 62 C366 58 374 58 378 62" class="stroke-main" />
+      <circle cx="370" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M390 55 C385 50 385 44 390 44 C395 44 395 52 388 52" class="stroke-main" />
+      <circle cx="390" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M410 45 C405 45 405 55 410 55 C415 55 415 45 410 45 Z" class="stroke-main" />
+      <line x1="410" y1="43" x2="410" y2="67" class="stroke-main" />
+      <path d="M404 50 L416 50" class="stroke-main" />
+      <path d="M402 62 C406 58 414 58 418 62" class="stroke-main" />
+      <circle cx="410" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M430 55 C425 50 425 44 430 44 C435 44 435 52 428 52" class="stroke-main" />
+      <circle cx="430" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M450 45 C445 45 445 55 450 55 C455 55 455 45 450 45 Z" class="stroke-main" />
+      <line x1="450" y1="43" x2="450" y2="67" class="stroke-main" />
+      <path d="M444 50 L456 50" class="stroke-main" />
+      <path d="M442 62 C446 58 454 58 458 62" class="stroke-main" />
+      <circle cx="450" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M470 55 C465 50 465 44 470 44 C475 44 475 52 468 52" class="stroke-main" />
+      <circle cx="470" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M490 45 C485 45 485 55 490 55 C495 55 495 45 490 45 Z" class="stroke-main" />
+      <line x1="490" y1="43" x2="490" y2="67" class="stroke-main" />
+      <path d="M484 50 L496 50" class="stroke-main" />
+      <path d="M482 62 C486 58 494 58 498 62" class="stroke-main" />
+      <circle cx="490" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M510 55 C505 50 505 44 510 44 C515 44 515 52 508 52" class="stroke-main" />
+      <circle cx="510" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M530 45 C525 45 525 55 530 55 C535 55 535 45 530 45 Z" class="stroke-main" />
+      <line x1="530" y1="43" x2="530" y2="67" class="stroke-main" />
+      <path d="M524 50 L536 50" class="stroke-main" />
+      <path d="M522 62 C526 58 534 58 538 62" class="stroke-main" />
+      <circle cx="530" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M550 55 C545 50 545 44 550 44 C555 44 555 52 548 52" class="stroke-main" />
+      <circle cx="550" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M570 45 C565 45 565 55 570 55 C575 55 575 45 570 45 Z" class="stroke-main" />
+      <line x1="570" y1="43" x2="570" y2="67" class="stroke-main" />
+      <path d="M564 50 L576 50" class="stroke-main" />
+      <path d="M562 62 C566 58 574 58 578 62" class="stroke-main" />
+      <circle cx="570" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M590 55 C585 50 585 44 590 44 C595 44 595 52 588 52" class="stroke-main" />
+      <circle cx="590" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M610 45 C605 45 605 55 610 55 C615 55 615 45 610 45 Z" class="stroke-main" />
+      <line x1="610" y1="43" x2="610" y2="67" class="stroke-main" />
+      <path d="M604 50 L616 50" class="stroke-main" />
+      <path d="M602 62 C606 58 614 58 618 62" class="stroke-main" />
+      <circle cx="610" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M630 55 C625 50 625 44 630 44 C635 44 635 52 628 52" class="stroke-main" />
+      <circle cx="630" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M650 45 C645 45 645 55 650 55 C655 55 655 45 650 45 Z" class="stroke-main" />
+      <line x1="650" y1="43" x2="650" y2="67" class="stroke-main" />
+      <path d="M644 50 L656 50" class="stroke-main" />
+      <path d="M642 62 C646 58 654 58 658 62" class="stroke-main" />
+      <circle cx="650" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M670 55 C665 50 665 44 670 44 C675 44 675 52 668 52" class="stroke-main" />
+      <circle cx="670" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M690 45 C685 45 685 55 690 55 C695 55 695 45 690 45 Z" class="stroke-main" />
+      <line x1="690" y1="43" x2="690" y2="67" class="stroke-main" />
+      <path d="M684 50 L696 50" class="stroke-main" />
+      <path d="M682 62 C686 58 694 58 698 62" class="stroke-main" />
+      <circle cx="690" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M710 55 C705 50 705 44 710 44 C715 44 715 52 708 52" class="stroke-main" />
+      <circle cx="710" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M730 45 C725 45 725 55 730 55 C735 55 735 45 730 45 Z" class="stroke-main" />
+      <line x1="730" y1="43" x2="730" y2="67" class="stroke-main" />
+      <path d="M724 50 L736 50" class="stroke-main" />
+      <path d="M722 62 C726 58 734 58 738 62" class="stroke-main" />
+      <circle cx="730" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M750 55 C745 50 745 44 750 44 C755 44 755 52 748 52" class="stroke-main" />
+      <circle cx="750" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M770 45 C765 45 765 55 770 55 C775 55 775 45 770 45 Z" class="stroke-main" />
+      <line x1="770" y1="43" x2="770" y2="67" class="stroke-main" />
+      <path d="M764 50 L776 50" class="stroke-main" />
+      <path d="M762 62 C766 58 774 58 778 62" class="stroke-main" />
+      <circle cx="770" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M790 55 C785 50 785 44 790 44 C795 44 795 52 788 52" class="stroke-main" />
+      <circle cx="790" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M810 45 C805 45 805 55 810 55 C815 55 815 45 810 45 Z" class="stroke-main" />
+      <line x1="810" y1="43" x2="810" y2="67" class="stroke-main" />
+      <path d="M804 50 L816 50" class="stroke-main" />
+      <path d="M802 62 C806 58 814 58 818 62" class="stroke-main" />
+      <circle cx="810" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M830 55 C825 50 825 44 830 44 C835 44 835 52 828 52" class="stroke-main" />
+      <circle cx="830" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M850 45 C845 45 845 55 850 55 C855 55 855 45 850 45 Z" class="stroke-main" />
+      <line x1="850" y1="43" x2="850" y2="67" class="stroke-main" />
+      <path d="M844 50 L856 50" class="stroke-main" />
+      <path d="M842 62 C846 58 854 58 858 62" class="stroke-main" />
+      <circle cx="850" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M870 55 C865 50 865 44 870 44 C875 44 875 52 868 52" class="stroke-main" />
+      <circle cx="870" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M890 45 C885 45 885 55 890 55 C895 55 895 45 890 45 Z" class="stroke-main" />
+      <line x1="890" y1="43" x2="890" y2="67" class="stroke-main" />
+      <path d="M884 50 L896 50" class="stroke-main" />
+      <path d="M882 62 C886 58 894 58 898 62" class="stroke-main" />
+      <circle cx="890" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M910 55 C905 50 905 44 910 44 C915 44 915 52 908 52" class="stroke-main" />
+      <circle cx="910" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M930 45 C925 45 925 55 930 55 C935 55 935 45 930 45 Z" class="stroke-main" />
+      <line x1="930" y1="43" x2="930" y2="67" class="stroke-main" />
+      <path d="M924 50 L936 50" class="stroke-main" />
+      <path d="M922 62 C926 58 934 58 938 62" class="stroke-main" />
+      <circle cx="930" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M950 55 C945 50 945 44 950 44 C955 44 955 52 948 52" class="stroke-main" />
+      <circle cx="950" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M970 45 C965 45 965 55 970 55 C975 55 975 45 970 45 Z" class="stroke-main" />
+      <line x1="970" y1="43" x2="970" y2="67" class="stroke-main" />
+      <path d="M964 50 L976 50" class="stroke-main" />
+      <path d="M962 62 C966 58 974 58 978 62" class="stroke-main" />
+      <circle cx="970" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M990 55 C985 50 985 44 990 44 C995 44 995 52 988 52" class="stroke-main" />
+      <circle cx="990" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M1010 45 C1005 45 1005 55 1010 55 C1015 55 1015 45 1010 45 Z" class="stroke-main" />
+      <line x1="1010" y1="43" x2="1010" y2="67" class="stroke-main" />
+      <path d="M1004 50 L1016 50" class="stroke-main" />
+      <path d="M1002 62 C1006 58 1014 58 1018 62" class="stroke-main" />
+      <circle cx="1010" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M1030 55 C1025 50 1025 44 1030 44 C1035 44 1035 52 1028 52" class="stroke-main" />
+      <circle cx="1030" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M1050 45 C1045 45 1045 55 1050 55 C1055 55 1055 45 1050 45 Z" class="stroke-main" />
+      <line x1="1050" y1="43" x2="1050" y2="67" class="stroke-main" />
+      <path d="M1044 50 L1056 50" class="stroke-main" />
+      <path d="M1042 62 C1046 58 1054 58 1058 62" class="stroke-main" />
+      <circle cx="1050" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M1070 55 C1065 50 1065 44 1070 44 C1075 44 1075 52 1068 52" class="stroke-main" />
+      <circle cx="1070" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M1090 45 C1085 45 1085 55 1090 55 C1095 55 1095 45 1090 45 Z" class="stroke-main" />
+      <line x1="1090" y1="43" x2="1090" y2="67" class="stroke-main" />
+      <path d="M1084 50 L1096 50" class="stroke-main" />
+      <path d="M1082 62 C1086 58 1094 58 1098 62" class="stroke-main" />
+      <circle cx="1090" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M1110 55 C1105 50 1105 44 1110 44 C1115 44 1115 52 1108 52" class="stroke-main" />
+      <circle cx="1110" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M1130 45 C1125 45 1125 55 1130 55 C1135 55 1135 45 1130 45 Z" class="stroke-main" />
+      <line x1="1130" y1="43" x2="1130" y2="67" class="stroke-main" />
+      <path d="M1124 50 L1136 50" class="stroke-main" />
+      <path d="M1122 62 C1126 58 1134 58 1138 62" class="stroke-main" />
+      <circle cx="1130" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M1150 55 C1145 50 1145 44 1150 44 C1155 44 1155 52 1148 52" class="stroke-main" />
+      <circle cx="1150" cy="60" r="2" class="fill-gold" />
+    
+
+      <path d="M1170 45 C1165 45 1165 55 1170 55 C1175 55 1175 45 1170 45 Z" class="stroke-main" />
+      <line x1="1170" y1="43" x2="1170" y2="67" class="stroke-main" />
+      <path d="M1164 50 L1176 50" class="stroke-main" />
+      <path d="M1162 62 C1166 58 1174 58 1178 62" class="stroke-main" />
+      <circle cx="1170" cy="43" r="2.5" class="fill-main" />
+    
+
+      <path d="M1190 55 C1185 50 1185 44 1190 44 C1195 44 1195 52 1188 52" class="stroke-main" />
+      <circle cx="1190" cy="60" r="2" class="fill-gold" />
+    
+  <!-- BAND 4: INTERLOCKING SCROLL / MEANDER WAVE (Y: 70-85) -->
+  <rect x="0" y="70" width="1200" height="15" class="bg-band4" />
+  <line x1="0" y1="70" x2="1200" y2="70" stroke="#021632" stroke-width="2" />
+<path d="M0 77 C5 71 10 71 10 77 C10 83 15 83 20 77" class="stroke-main" />
+<path d="M20 77 C25 71 30 71 30 77 C30 83 35 83 40 77" class="stroke-main" />
+<path d="M40 77 C45 71 50 71 50 77 C50 83 55 83 60 77" class="stroke-main" />
+<path d="M60 77 C65 71 70 71 70 77 C70 83 75 83 80 77" class="stroke-main" />
+<path d="M80 77 C85 71 90 71 90 77 C90 83 95 83 100 77" class="stroke-main" />
+<path d="M100 77 C105 71 110 71 110 77 C110 83 115 83 120 77" class="stroke-main" />
+<path d="M120 77 C125 71 130 71 130 77 C130 83 135 83 140 77" class="stroke-main" />
+<path d="M140 77 C145 71 150 71 150 77 C150 83 155 83 160 77" class="stroke-main" />
+<path d="M160 77 C165 71 170 71 170 77 C170 83 175 83 180 77" class="stroke-main" />
+<path d="M180 77 C185 71 190 71 190 77 C190 83 195 83 200 77" class="stroke-main" />
+<path d="M200 77 C205 71 210 71 210 77 C210 83 215 83 220 77" class="stroke-main" />
+<path d="M220 77 C225 71 230 71 230 77 C230 83 235 83 240 77" class="stroke-main" />
+<path d="M240 77 C245 71 250 71 250 77 C250 83 255 83 260 77" class="stroke-main" />
+<path d="M260 77 C265 71 270 71 270 77 C270 83 275 83 280 77" class="stroke-main" />
+<path d="M280 77 C285 71 290 71 290 77 C290 83 295 83 300 77" class="stroke-main" />
+<path d="M300 77 C305 71 310 71 310 77 C310 83 315 83 320 77" class="stroke-main" />
+<path d="M320 77 C325 71 330 71 330 77 C330 83 335 83 340 77" class="stroke-main" />
+<path d="M340 77 C345 71 350 71 350 77 C350 83 355 83 360 77" class="stroke-main" />
+<path d="M360 77 C365 71 370 71 370 77 C370 83 375 83 380 77" class="stroke-main" />
+<path d="M380 77 C385 71 390 71 390 77 C390 83 395 83 400 77" class="stroke-main" />
+<path d="M400 77 C405 71 410 71 410 77 C410 83 415 83 420 77" class="stroke-main" />
+<path d="M420 77 C425 71 430 71 430 77 C430 83 435 83 440 77" class="stroke-main" />
+<path d="M440 77 C445 71 450 71 450 77 C450 83 455 83 460 77" class="stroke-main" />
+<path d="M460 77 C465 71 470 71 470 77 C470 83 475 83 480 77" class="stroke-main" />
+<path d="M480 77 C485 71 490 71 490 77 C490 83 495 83 500 77" class="stroke-main" />
+<path d="M500 77 C505 71 510 71 510 77 C510 83 515 83 520 77" class="stroke-main" />
+<path d="M520 77 C525 71 530 71 530 77 C530 83 535 83 540 77" class="stroke-main" />
+<path d="M540 77 C545 71 550 71 550 77 C550 83 555 83 560 77" class="stroke-main" />
+<path d="M560 77 C565 71 570 71 570 77 C570 83 575 83 580 77" class="stroke-main" />
+<path d="M580 77 C585 71 590 71 590 77 C590 83 595 83 600 77" class="stroke-main" />
+<path d="M600 77 C605 71 610 71 610 77 C610 83 615 83 620 77" class="stroke-main" />
+<path d="M620 77 C625 71 630 71 630 77 C630 83 635 83 640 77" class="stroke-main" />
+<path d="M640 77 C645 71 650 71 650 77 C650 83 655 83 660 77" class="stroke-main" />
+<path d="M660 77 C665 71 670 71 670 77 C670 83 675 83 680 77" class="stroke-main" />
+<path d="M680 77 C685 71 690 71 690 77 C690 83 695 83 700 77" class="stroke-main" />
+<path d="M700 77 C705 71 710 71 710 77 C710 83 715 83 720 77" class="stroke-main" />
+<path d="M720 77 C725 71 730 71 730 77 C730 83 735 83 740 77" class="stroke-main" />
+<path d="M740 77 C745 71 750 71 750 77 C750 83 755 83 760 77" class="stroke-main" />
+<path d="M760 77 C765 71 770 71 770 77 C770 83 775 83 780 77" class="stroke-main" />
+<path d="M780 77 C785 71 790 71 790 77 C790 83 795 83 800 77" class="stroke-main" />
+<path d="M800 77 C805 71 810 71 810 77 C810 83 815 83 820 77" class="stroke-main" />
+<path d="M820 77 C825 71 830 71 830 77 C830 83 835 83 840 77" class="stroke-main" />
+<path d="M840 77 C845 71 850 71 850 77 C850 83 855 83 860 77" class="stroke-main" />
+<path d="M860 77 C865 71 870 71 870 77 C870 83 875 83 880 77" class="stroke-main" />
+<path d="M880 77 C885 71 890 71 890 77 C890 83 895 83 900 77" class="stroke-main" />
+<path d="M900 77 C905 71 910 71 910 77 C910 83 915 83 920 77" class="stroke-main" />
+<path d="M920 77 C925 71 930 71 930 77 C930 83 935 83 940 77" class="stroke-main" />
+<path d="M940 77 C945 71 950 71 950 77 C950 83 955 83 960 77" class="stroke-main" />
+<path d="M960 77 C965 71 970 71 970 77 C970 83 975 83 980 77" class="stroke-main" />
+<path d="M980 77 C985 71 990 71 990 77 C990 83 995 83 1000 77" class="stroke-main" />
+<path d="M1000 77 C1005 71 1010 71 1010 77 C1010 83 1015 83 1020 77" class="stroke-main" />
+<path d="M1020 77 C1025 71 1030 71 1030 77 C1030 83 1035 83 1040 77" class="stroke-main" />
+<path d="M1040 77 C1045 71 1050 71 1050 77 C1050 83 1055 83 1060 77" class="stroke-main" />
+<path d="M1060 77 C1065 71 1070 71 1070 77 C1070 83 1075 83 1080 77" class="stroke-main" />
+<path d="M1080 77 C1085 71 1090 71 1090 77 C1090 83 1095 83 1100 77" class="stroke-main" />
+<path d="M1100 77 C1105 71 1110 71 1110 77 C1110 83 1115 83 1120 77" class="stroke-main" />
+<path d="M1120 77 C1125 71 1130 71 1130 77 C1130 83 1135 83 1140 77" class="stroke-main" />
+<path d="M1140 77 C1145 71 1150 71 1150 77 C1150 83 1155 83 1160 77" class="stroke-main" />
+<path d="M1160 77 C1165 71 1170 71 1170 77 C1170 83 1175 83 1180 77" class="stroke-main" />
+<path d="M1180 77 C1185 71 1190 71 1190 77 C1190 83 1195 83 1200 77" class="stroke-main" />
+  <!-- BAND 5: WOVEN BRICK GRID (Y: 85-102) -->
+  <rect x="0" y="85" width="1200" height="17" class="bg-band5" />
+  <line x1="0" y1="85" x2="1200" y2="85" stroke="#8C6D1F" stroke-width="1.5" />
+  <line x1="0" y1="93" x2="1200" y2="93" stroke="#8C6D1F" stroke-width="1" />
+  <line x1="0" y1="102" x2="1200" y2="102" stroke="#8C6D1F" stroke-width="1.5" />
+<line x1="0" y1="85" x2="0" y2="93" class="stroke-main" />
+<line x1="8" y1="93" x2="8" y2="102" class="stroke-main" />
+<line x1="16" y1="85" x2="16" y2="93" class="stroke-main" />
+<line x1="24" y1="93" x2="24" y2="102" class="stroke-main" />
+<line x1="32" y1="85" x2="32" y2="93" class="stroke-main" />
+<line x1="40" y1="93" x2="40" y2="102" class="stroke-main" />
+<line x1="48" y1="85" x2="48" y2="93" class="stroke-main" />
+<line x1="56" y1="93" x2="56" y2="102" class="stroke-main" />
+<line x1="64" y1="85" x2="64" y2="93" class="stroke-main" />
+<line x1="72" y1="93" x2="72" y2="102" class="stroke-main" />
+<line x1="80" y1="85" x2="80" y2="93" class="stroke-main" />
+<line x1="88" y1="93" x2="88" y2="102" class="stroke-main" />
+<line x1="96" y1="85" x2="96" y2="93" class="stroke-main" />
+<line x1="104" y1="93" x2="104" y2="102" class="stroke-main" />
+<line x1="112" y1="85" x2="112" y2="93" class="stroke-main" />
+<line x1="120" y1="93" x2="120" y2="102" class="stroke-main" />
+<line x1="128" y1="85" x2="128" y2="93" class="stroke-main" />
+<line x1="136" y1="93" x2="136" y2="102" class="stroke-main" />
+<line x1="144" y1="85" x2="144" y2="93" class="stroke-main" />
+<line x1="152" y1="93" x2="152" y2="102" class="stroke-main" />
+<line x1="160" y1="85" x2="160" y2="93" class="stroke-main" />
+<line x1="168" y1="93" x2="168" y2="102" class="stroke-main" />
+<line x1="176" y1="85" x2="176" y2="93" class="stroke-main" />
+<line x1="184" y1="93" x2="184" y2="102" class="stroke-main" />
+<line x1="192" y1="85" x2="192" y2="93" class="stroke-main" />
+<line x1="200" y1="93" x2="200" y2="102" class="stroke-main" />
+<line x1="208" y1="85" x2="208" y2="93" class="stroke-main" />
+<line x1="216" y1="93" x2="216" y2="102" class="stroke-main" />
+<line x1="224" y1="85" x2="224" y2="93" class="stroke-main" />
+<line x1="232" y1="93" x2="232" y2="102" class="stroke-main" />
+<line x1="240" y1="85" x2="240" y2="93" class="stroke-main" />
+<line x1="248" y1="93" x2="248" y2="102" class="stroke-main" />
+<line x1="256" y1="85" x2="256" y2="93" class="stroke-main" />
+<line x1="264" y1="93" x2="264" y2="102" class="stroke-main" />
+<line x1="272" y1="85" x2="272" y2="93" class="stroke-main" />
+<line x1="280" y1="93" x2="280" y2="102" class="stroke-main" />
+<line x1="288" y1="85" x2="288" y2="93" class="stroke-main" />
+<line x1="296" y1="93" x2="296" y2="102" class="stroke-main" />
+<line x1="304" y1="85" x2="304" y2="93" class="stroke-main" />
+<line x1="312" y1="93" x2="312" y2="102" class="stroke-main" />
+<line x1="320" y1="85" x2="320" y2="93" class="stroke-main" />
+<line x1="328" y1="93" x2="328" y2="102" class="stroke-main" />
+<line x1="336" y1="85" x2="336" y2="93" class="stroke-main" />
+<line x1="344" y1="93" x2="344" y2="102" class="stroke-main" />
+<line x1="352" y1="85" x2="352" y2="93" class="stroke-main" />
+<line x1="360" y1="93" x2="360" y2="102" class="stroke-main" />
+<line x1="368" y1="85" x2="368" y2="93" class="stroke-main" />
+<line x1="376" y1="93" x2="376" y2="102" class="stroke-main" />
+<line x1="384" y1="85" x2="384" y2="93" class="stroke-main" />
+<line x1="392" y1="93" x2="392" y2="102" class="stroke-main" />
+<line x1="400" y1="85" x2="400" y2="93" class="stroke-main" />
+<line x1="408" y1="93" x2="408" y2="102" class="stroke-main" />
+<line x1="416" y1="85" x2="416" y2="93" class="stroke-main" />
+<line x1="424" y1="93" x2="424" y2="102" class="stroke-main" />
+<line x1="432" y1="85" x2="432" y2="93" class="stroke-main" />
+<line x1="440" y1="93" x2="440" y2="102" class="stroke-main" />
+<line x1="448" y1="85" x2="448" y2="93" class="stroke-main" />
+<line x1="456" y1="93" x2="456" y2="102" class="stroke-main" />
+<line x1="464" y1="85" x2="464" y2="93" class="stroke-main" />
+<line x1="472" y1="93" x2="472" y2="102" class="stroke-main" />
+<line x1="480" y1="85" x2="480" y2="93" class="stroke-main" />
+<line x1="488" y1="93" x2="488" y2="102" class="stroke-main" />
+<line x1="496" y1="85" x2="496" y2="93" class="stroke-main" />
+<line x1="504" y1="93" x2="504" y2="102" class="stroke-main" />
+<line x1="512" y1="85" x2="512" y2="93" class="stroke-main" />
+<line x1="520" y1="93" x2="520" y2="102" class="stroke-main" />
+<line x1="528" y1="85" x2="528" y2="93" class="stroke-main" />
+<line x1="536" y1="93" x2="536" y2="102" class="stroke-main" />
+<line x1="544" y1="85" x2="544" y2="93" class="stroke-main" />
+<line x1="552" y1="93" x2="552" y2="102" class="stroke-main" />
+<line x1="560" y1="85" x2="560" y2="93" class="stroke-main" />
+<line x1="568" y1="93" x2="568" y2="102" class="stroke-main" />
+<line x1="576" y1="85" x2="576" y2="93" class="stroke-main" />
+<line x1="584" y1="93" x2="584" y2="102" class="stroke-main" />
+<line x1="592" y1="85" x2="592" y2="93" class="stroke-main" />
+<line x1="600" y1="93" x2="600" y2="102" class="stroke-main" />
+<line x1="608" y1="85" x2="608" y2="93" class="stroke-main" />
+<line x1="616" y1="93" x2="616" y2="102" class="stroke-main" />
+<line x1="624" y1="85" x2="624" y2="93" class="stroke-main" />
+<line x1="632" y1="93" x2="632" y2="102" class="stroke-main" />
+<line x1="640" y1="85" x2="640" y2="93" class="stroke-main" />
+<line x1="648" y1="93" x2="648" y2="102" class="stroke-main" />
+<line x1="656" y1="85" x2="656" y2="93" class="stroke-main" />
+<line x1="664" y1="93" x2="664" y2="102" class="stroke-main" />
+<line x1="672" y1="85" x2="672" y2="93" class="stroke-main" />
+<line x1="680" y1="93" x2="680" y2="102" class="stroke-main" />
+<line x1="688" y1="85" x2="688" y2="93" class="stroke-main" />
+<line x1="696" y1="93" x2="696" y2="102" class="stroke-main" />
+<line x1="704" y1="85" x2="704" y2="93" class="stroke-main" />
+<line x1="712" y1="93" x2="712" y2="102" class="stroke-main" />
+<line x1="720" y1="85" x2="720" y2="93" class="stroke-main" />
+<line x1="728" y1="93" x2="728" y2="102" class="stroke-main" />
+<line x1="736" y1="85" x2="736" y2="93" class="stroke-main" />
+<line x1="744" y1="93" x2="744" y2="102" class="stroke-main" />
+<line x1="752" y1="85" x2="752" y2="93" class="stroke-main" />
+<line x1="760" y1="93" x2="760" y2="102" class="stroke-main" />
+<line x1="768" y1="85" x2="768" y2="93" class="stroke-main" />
+<line x1="776" y1="93" x2="776" y2="102" class="stroke-main" />
+<line x1="784" y1="85" x2="784" y2="93" class="stroke-main" />
+<line x1="792" y1="93" x2="792" y2="102" class="stroke-main" />
+<line x1="800" y1="85" x2="800" y2="93" class="stroke-main" />
+<line x1="808" y1="93" x2="808" y2="102" class="stroke-main" />
+<line x1="816" y1="85" x2="816" y2="93" class="stroke-main" />
+<line x1="824" y1="93" x2="824" y2="102" class="stroke-main" />
+<line x1="832" y1="85" x2="832" y2="93" class="stroke-main" />
+<line x1="840" y1="93" x2="840" y2="102" class="stroke-main" />
+<line x1="848" y1="85" x2="848" y2="93" class="stroke-main" />
+<line x1="856" y1="93" x2="856" y2="102" class="stroke-main" />
+<line x1="864" y1="85" x2="864" y2="93" class="stroke-main" />
+<line x1="872" y1="93" x2="872" y2="102" class="stroke-main" />
+<line x1="880" y1="85" x2="880" y2="93" class="stroke-main" />
+<line x1="888" y1="93" x2="888" y2="102" class="stroke-main" />
+<line x1="896" y1="85" x2="896" y2="93" class="stroke-main" />
+<line x1="904" y1="93" x2="904" y2="102" class="stroke-main" />
+<line x1="912" y1="85" x2="912" y2="93" class="stroke-main" />
+<line x1="920" y1="93" x2="920" y2="102" class="stroke-main" />
+<line x1="928" y1="85" x2="928" y2="93" class="stroke-main" />
+<line x1="936" y1="93" x2="936" y2="102" class="stroke-main" />
+<line x1="944" y1="85" x2="944" y2="93" class="stroke-main" />
+<line x1="952" y1="93" x2="952" y2="102" class="stroke-main" />
+<line x1="960" y1="85" x2="960" y2="93" class="stroke-main" />
+<line x1="968" y1="93" x2="968" y2="102" class="stroke-main" />
+<line x1="976" y1="85" x2="976" y2="93" class="stroke-main" />
+<line x1="984" y1="93" x2="984" y2="102" class="stroke-main" />
+<line x1="992" y1="85" x2="992" y2="93" class="stroke-main" />
+<line x1="1000" y1="93" x2="1000" y2="102" class="stroke-main" />
+<line x1="1008" y1="85" x2="1008" y2="93" class="stroke-main" />
+<line x1="1016" y1="93" x2="1016" y2="102" class="stroke-main" />
+<line x1="1024" y1="85" x2="1024" y2="93" class="stroke-main" />
+<line x1="1032" y1="93" x2="1032" y2="102" class="stroke-main" />
+<line x1="1040" y1="85" x2="1040" y2="93" class="stroke-main" />
+<line x1="1048" y1="93" x2="1048" y2="102" class="stroke-main" />
+<line x1="1056" y1="85" x2="1056" y2="93" class="stroke-main" />
+<line x1="1064" y1="93" x2="1064" y2="102" class="stroke-main" />
+<line x1="1072" y1="85" x2="1072" y2="93" class="stroke-main" />
+<line x1="1080" y1="93" x2="1080" y2="102" class="stroke-main" />
+<line x1="1088" y1="85" x2="1088" y2="93" class="stroke-main" />
+<line x1="1096" y1="93" x2="1096" y2="102" class="stroke-main" />
+<line x1="1104" y1="85" x2="1104" y2="93" class="stroke-main" />
+<line x1="1112" y1="93" x2="1112" y2="102" class="stroke-main" />
+<line x1="1120" y1="85" x2="1120" y2="93" class="stroke-main" />
+<line x1="1128" y1="93" x2="1128" y2="102" class="stroke-main" />
+<line x1="1136" y1="85" x2="1136" y2="93" class="stroke-main" />
+<line x1="1144" y1="93" x2="1144" y2="102" class="stroke-main" />
+<line x1="1152" y1="85" x2="1152" y2="93" class="stroke-main" />
+<line x1="1160" y1="93" x2="1160" y2="102" class="stroke-main" />
+<line x1="1168" y1="85" x2="1168" y2="93" class="stroke-main" />
+<line x1="1176" y1="93" x2="1176" y2="102" class="stroke-main" />
+<line x1="1184" y1="85" x2="1184" y2="93" class="stroke-main" />
+<line x1="1192" y1="93" x2="1192" y2="102" class="stroke-main" />
+  <!-- BAND 6: AYA FERN / PALM ADINKRA MOTIF (Y: 102-120) -->
+  <rect x="0" y="102" width="1200" height="18" class="bg-band6" />
+
+      <line x1="12" y1="103" x2="12" y2="119" class="stroke-main" />
+      <path d="M12 107 L6 104 M12 107 L18 104" class="stroke-main" />
+      <path d="M12 111 L5 108 M12 111 L19 108" class="stroke-main" />
+      <path d="M12 115 L4 112 M12 115 L20 112" class="stroke-main" />
+    
+
+      <line x1="36" y1="103" x2="36" y2="119" class="stroke-main" />
+      <path d="M36 107 L30 104 M36 107 L42 104" class="stroke-main" />
+      <path d="M36 111 L29 108 M36 111 L43 108" class="stroke-main" />
+      <path d="M36 115 L28 112 M36 115 L44 112" class="stroke-main" />
+    
+
+      <line x1="60" y1="103" x2="60" y2="119" class="stroke-main" />
+      <path d="M60 107 L54 104 M60 107 L66 104" class="stroke-main" />
+      <path d="M60 111 L53 108 M60 111 L67 108" class="stroke-main" />
+      <path d="M60 115 L52 112 M60 115 L68 112" class="stroke-main" />
+    
+
+      <line x1="84" y1="103" x2="84" y2="119" class="stroke-main" />
+      <path d="M84 107 L78 104 M84 107 L90 104" class="stroke-main" />
+      <path d="M84 111 L77 108 M84 111 L91 108" class="stroke-main" />
+      <path d="M84 115 L76 112 M84 115 L92 112" class="stroke-main" />
+    
+
+      <line x1="108" y1="103" x2="108" y2="119" class="stroke-main" />
+      <path d="M108 107 L102 104 M108 107 L114 104" class="stroke-main" />
+      <path d="M108 111 L101 108 M108 111 L115 108" class="stroke-main" />
+      <path d="M108 115 L100 112 M108 115 L116 112" class="stroke-main" />
+    
+
+      <line x1="132" y1="103" x2="132" y2="119" class="stroke-main" />
+      <path d="M132 107 L126 104 M132 107 L138 104" class="stroke-main" />
+      <path d="M132 111 L125 108 M132 111 L139 108" class="stroke-main" />
+      <path d="M132 115 L124 112 M132 115 L140 112" class="stroke-main" />
+    
+
+      <line x1="156" y1="103" x2="156" y2="119" class="stroke-main" />
+      <path d="M156 107 L150 104 M156 107 L162 104" class="stroke-main" />
+      <path d="M156 111 L149 108 M156 111 L163 108" class="stroke-main" />
+      <path d="M156 115 L148 112 M156 115 L164 112" class="stroke-main" />
+    
+
+      <line x1="180" y1="103" x2="180" y2="119" class="stroke-main" />
+      <path d="M180 107 L174 104 M180 107 L186 104" class="stroke-main" />
+      <path d="M180 111 L173 108 M180 111 L187 108" class="stroke-main" />
+      <path d="M180 115 L172 112 M180 115 L188 112" class="stroke-main" />
+    
+
+      <line x1="204" y1="103" x2="204" y2="119" class="stroke-main" />
+      <path d="M204 107 L198 104 M204 107 L210 104" class="stroke-main" />
+      <path d="M204 111 L197 108 M204 111 L211 108" class="stroke-main" />
+      <path d="M204 115 L196 112 M204 115 L212 112" class="stroke-main" />
+    
+
+      <line x1="228" y1="103" x2="228" y2="119" class="stroke-main" />
+      <path d="M228 107 L222 104 M228 107 L234 104" class="stroke-main" />
+      <path d="M228 111 L221 108 M228 111 L235 108" class="stroke-main" />
+      <path d="M228 115 L220 112 M228 115 L236 112" class="stroke-main" />
+    
+
+      <line x1="252" y1="103" x2="252" y2="119" class="stroke-main" />
+      <path d="M252 107 L246 104 M252 107 L258 104" class="stroke-main" />
+      <path d="M252 111 L245 108 M252 111 L259 108" class="stroke-main" />
+      <path d="M252 115 L244 112 M252 115 L260 112" class="stroke-main" />
+    
+
+      <line x1="276" y1="103" x2="276" y2="119" class="stroke-main" />
+      <path d="M276 107 L270 104 M276 107 L282 104" class="stroke-main" />
+      <path d="M276 111 L269 108 M276 111 L283 108" class="stroke-main" />
+      <path d="M276 115 L268 112 M276 115 L284 112" class="stroke-main" />
+    
+
+      <line x1="300" y1="103" x2="300" y2="119" class="stroke-main" />
+      <path d="M300 107 L294 104 M300 107 L306 104" class="stroke-main" />
+      <path d="M300 111 L293 108 M300 111 L307 108" class="stroke-main" />
+      <path d="M300 115 L292 112 M300 115 L308 112" class="stroke-main" />
+    
+
+      <line x1="324" y1="103" x2="324" y2="119" class="stroke-main" />
+      <path d="M324 107 L318 104 M324 107 L330 104" class="stroke-main" />
+      <path d="M324 111 L317 108 M324 111 L331 108" class="stroke-main" />
+      <path d="M324 115 L316 112 M324 115 L332 112" class="stroke-main" />
+    
+
+      <line x1="348" y1="103" x2="348" y2="119" class="stroke-main" />
+      <path d="M348 107 L342 104 M348 107 L354 104" class="stroke-main" />
+      <path d="M348 111 L341 108 M348 111 L355 108" class="stroke-main" />
+      <path d="M348 115 L340 112 M348 115 L356 112" class="stroke-main" />
+    
+
+      <line x1="372" y1="103" x2="372" y2="119" class="stroke-main" />
+      <path d="M372 107 L366 104 M372 107 L378 104" class="stroke-main" />
+      <path d="M372 111 L365 108 M372 111 L379 108" class="stroke-main" />
+      <path d="M372 115 L364 112 M372 115 L380 112" class="stroke-main" />
+    
+
+      <line x1="396" y1="103" x2="396" y2="119" class="stroke-main" />
+      <path d="M396 107 L390 104 M396 107 L402 104" class="stroke-main" />
+      <path d="M396 111 L389 108 M396 111 L403 108" class="stroke-main" />
+      <path d="M396 115 L388 112 M396 115 L404 112" class="stroke-main" />
+    
+
+      <line x1="420" y1="103" x2="420" y2="119" class="stroke-main" />
+      <path d="M420 107 L414 104 M420 107 L426 104" class="stroke-main" />
+      <path d="M420 111 L413 108 M420 111 L427 108" class="stroke-main" />
+      <path d="M420 115 L412 112 M420 115 L428 112" class="stroke-main" />
+    
+
+      <line x1="444" y1="103" x2="444" y2="119" class="stroke-main" />
+      <path d="M444 107 L438 104 M444 107 L450 104" class="stroke-main" />
+      <path d="M444 111 L437 108 M444 111 L451 108" class="stroke-main" />
+      <path d="M444 115 L436 112 M444 115 L452 112" class="stroke-main" />
+    
+
+      <line x1="468" y1="103" x2="468" y2="119" class="stroke-main" />
+      <path d="M468 107 L462 104 M468 107 L474 104" class="stroke-main" />
+      <path d="M468 111 L461 108 M468 111 L475 108" class="stroke-main" />
+      <path d="M468 115 L460 112 M468 115 L476 112" class="stroke-main" />
+    
+
+      <line x1="492" y1="103" x2="492" y2="119" class="stroke-main" />
+      <path d="M492 107 L486 104 M492 107 L498 104" class="stroke-main" />
+      <path d="M492 111 L485 108 M492 111 L499 108" class="stroke-main" />
+      <path d="M492 115 L484 112 M492 115 L500 112" class="stroke-main" />
+    
+
+      <line x1="516" y1="103" x2="516" y2="119" class="stroke-main" />
+      <path d="M516 107 L510 104 M516 107 L522 104" class="stroke-main" />
+      <path d="M516 111 L509 108 M516 111 L523 108" class="stroke-main" />
+      <path d="M516 115 L508 112 M516 115 L524 112" class="stroke-main" />
+    
+
+      <line x1="540" y1="103" x2="540" y2="119" class="stroke-main" />
+      <path d="M540 107 L534 104 M540 107 L546 104" class="stroke-main" />
+      <path d="M540 111 L533 108 M540 111 L547 108" class="stroke-main" />
+      <path d="M540 115 L532 112 M540 115 L548 112" class="stroke-main" />
+    
+
+      <line x1="564" y1="103" x2="564" y2="119" class="stroke-main" />
+      <path d="M564 107 L558 104 M564 107 L570 104" class="stroke-main" />
+      <path d="M564 111 L557 108 M564 111 L571 108" class="stroke-main" />
+      <path d="M564 115 L556 112 M564 115 L572 112" class="stroke-main" />
+    
+
+      <line x1="588" y1="103" x2="588" y2="119" class="stroke-main" />
+      <path d="M588 107 L582 104 M588 107 L594 104" class="stroke-main" />
+      <path d="M588 111 L581 108 M588 111 L595 108" class="stroke-main" />
+      <path d="M588 115 L580 112 M588 115 L596 112" class="stroke-main" />
+    
+
+      <line x1="612" y1="103" x2="612" y2="119" class="stroke-main" />
+      <path d="M612 107 L606 104 M612 107 L618 104" class="stroke-main" />
+      <path d="M612 111 L605 108 M612 111 L619 108" class="stroke-main" />
+      <path d="M612 115 L604 112 M612 115 L620 112" class="stroke-main" />
+    
+
+      <line x1="636" y1="103" x2="636" y2="119" class="stroke-main" />
+      <path d="M636 107 L630 104 M636 107 L642 104" class="stroke-main" />
+      <path d="M636 111 L629 108 M636 111 L643 108" class="stroke-main" />
+      <path d="M636 115 L628 112 M636 115 L644 112" class="stroke-main" />
+    
+
+      <line x1="660" y1="103" x2="660" y2="119" class="stroke-main" />
+      <path d="M660 107 L654 104 M660 107 L666 104" class="stroke-main" />
+      <path d="M660 111 L653 108 M660 111 L667 108" class="stroke-main" />
+      <path d="M660 115 L652 112 M660 115 L668 112" class="stroke-main" />
+    
+
+      <line x1="684" y1="103" x2="684" y2="119" class="stroke-main" />
+      <path d="M684 107 L678 104 M684 107 L690 104" class="stroke-main" />
+      <path d="M684 111 L677 108 M684 111 L691 108" class="stroke-main" />
+      <path d="M684 115 L676 112 M684 115 L692 112" class="stroke-main" />
+    
+
+      <line x1="708" y1="103" x2="708" y2="119" class="stroke-main" />
+      <path d="M708 107 L702 104 M708 107 L714 104" class="stroke-main" />
+      <path d="M708 111 L701 108 M708 111 L715 108" class="stroke-main" />
+      <path d="M708 115 L700 112 M708 115 L716 112" class="stroke-main" />
+    
+
+      <line x1="732" y1="103" x2="732" y2="119" class="stroke-main" />
+      <path d="M732 107 L726 104 M732 107 L738 104" class="stroke-main" />
+      <path d="M732 111 L725 108 M732 111 L739 108" class="stroke-main" />
+      <path d="M732 115 L724 112 M732 115 L740 112" class="stroke-main" />
+    
+
+      <line x1="756" y1="103" x2="756" y2="119" class="stroke-main" />
+      <path d="M756 107 L750 104 M756 107 L762 104" class="stroke-main" />
+      <path d="M756 111 L749 108 M756 111 L763 108" class="stroke-main" />
+      <path d="M756 115 L748 112 M756 115 L764 112" class="stroke-main" />
+    
+
+      <line x1="780" y1="103" x2="780" y2="119" class="stroke-main" />
+      <path d="M780 107 L774 104 M780 107 L786 104" class="stroke-main" />
+      <path d="M780 111 L773 108 M780 111 L787 108" class="stroke-main" />
+      <path d="M780 115 L772 112 M780 115 L788 112" class="stroke-main" />
+    
+
+      <line x1="804" y1="103" x2="804" y2="119" class="stroke-main" />
+      <path d="M804 107 L798 104 M804 107 L810 104" class="stroke-main" />
+      <path d="M804 111 L797 108 M804 111 L811 108" class="stroke-main" />
+      <path d="M804 115 L796 112 M804 115 L812 112" class="stroke-main" />
+    
+
+      <line x1="828" y1="103" x2="828" y2="119" class="stroke-main" />
+      <path d="M828 107 L822 104 M828 107 L834 104" class="stroke-main" />
+      <path d="M828 111 L821 108 M828 111 L835 108" class="stroke-main" />
+      <path d="M828 115 L820 112 M828 115 L836 112" class="stroke-main" />
+    
+
+      <line x1="852" y1="103" x2="852" y2="119" class="stroke-main" />
+      <path d="M852 107 L846 104 M852 107 L858 104" class="stroke-main" />
+      <path d="M852 111 L845 108 M852 111 L859 108" class="stroke-main" />
+      <path d="M852 115 L844 112 M852 115 L860 112" class="stroke-main" />
+    
+
+      <line x1="876" y1="103" x2="876" y2="119" class="stroke-main" />
+      <path d="M876 107 L870 104 M876 107 L882 104" class="stroke-main" />
+      <path d="M876 111 L869 108 M876 111 L883 108" class="stroke-main" />
+      <path d="M876 115 L868 112 M876 115 L884 112" class="stroke-main" />
+    
+
+      <line x1="900" y1="103" x2="900" y2="119" class="stroke-main" />
+      <path d="M900 107 L894 104 M900 107 L906 104" class="stroke-main" />
+      <path d="M900 111 L893 108 M900 111 L907 108" class="stroke-main" />
+      <path d="M900 115 L892 112 M900 115 L908 112" class="stroke-main" />
+    
+
+      <line x1="924" y1="103" x2="924" y2="119" class="stroke-main" />
+      <path d="M924 107 L918 104 M924 107 L930 104" class="stroke-main" />
+      <path d="M924 111 L917 108 M924 111 L931 108" class="stroke-main" />
+      <path d="M924 115 L916 112 M924 115 L932 112" class="stroke-main" />
+    
+
+      <line x1="948" y1="103" x2="948" y2="119" class="stroke-main" />
+      <path d="M948 107 L942 104 M948 107 L954 104" class="stroke-main" />
+      <path d="M948 111 L941 108 M948 111 L955 108" class="stroke-main" />
+      <path d="M948 115 L940 112 M948 115 L956 112" class="stroke-main" />
+    
+
+      <line x1="972" y1="103" x2="972" y2="119" class="stroke-main" />
+      <path d="M972 107 L966 104 M972 107 L978 104" class="stroke-main" />
+      <path d="M972 111 L965 108 M972 111 L979 108" class="stroke-main" />
+      <path d="M972 115 L964 112 M972 115 L980 112" class="stroke-main" />
+    
+
+      <line x1="996" y1="103" x2="996" y2="119" class="stroke-main" />
+      <path d="M996 107 L990 104 M996 107 L1002 104" class="stroke-main" />
+      <path d="M996 111 L989 108 M996 111 L1003 108" class="stroke-main" />
+      <path d="M996 115 L988 112 M996 115 L1004 112" class="stroke-main" />
+    
+
+      <line x1="1020" y1="103" x2="1020" y2="119" class="stroke-main" />
+      <path d="M1020 107 L1014 104 M1020 107 L1026 104" class="stroke-main" />
+      <path d="M1020 111 L1013 108 M1020 111 L1027 108" class="stroke-main" />
+      <path d="M1020 115 L1012 112 M1020 115 L1028 112" class="stroke-main" />
+    
+
+      <line x1="1044" y1="103" x2="1044" y2="119" class="stroke-main" />
+      <path d="M1044 107 L1038 104 M1044 107 L1050 104" class="stroke-main" />
+      <path d="M1044 111 L1037 108 M1044 111 L1051 108" class="stroke-main" />
+      <path d="M1044 115 L1036 112 M1044 115 L1052 112" class="stroke-main" />
+    
+
+      <line x1="1068" y1="103" x2="1068" y2="119" class="stroke-main" />
+      <path d="M1068 107 L1062 104 M1068 107 L1074 104" class="stroke-main" />
+      <path d="M1068 111 L1061 108 M1068 111 L1075 108" class="stroke-main" />
+      <path d="M1068 115 L1060 112 M1068 115 L1076 112" class="stroke-main" />
+    
+
+      <line x1="1092" y1="103" x2="1092" y2="119" class="stroke-main" />
+      <path d="M1092 107 L1086 104 M1092 107 L1098 104" class="stroke-main" />
+      <path d="M1092 111 L1085 108 M1092 111 L1099 108" class="stroke-main" />
+      <path d="M1092 115 L1084 112 M1092 115 L1100 112" class="stroke-main" />
+    
+
+      <line x1="1116" y1="103" x2="1116" y2="119" class="stroke-main" />
+      <path d="M1116 107 L1110 104 M1116 107 L1122 104" class="stroke-main" />
+      <path d="M1116 111 L1109 108 M1116 111 L1123 108" class="stroke-main" />
+      <path d="M1116 115 L1108 112 M1116 115 L1124 112" class="stroke-main" />
+    
+
+      <line x1="1140" y1="103" x2="1140" y2="119" class="stroke-main" />
+      <path d="M1140 107 L1134 104 M1140 107 L1146 104" class="stroke-main" />
+      <path d="M1140 111 L1133 108 M1140 111 L1147 108" class="stroke-main" />
+      <path d="M1140 115 L1132 112 M1140 115 L1148 112" class="stroke-main" />
+    
+
+      <line x1="1164" y1="103" x2="1164" y2="119" class="stroke-main" />
+      <path d="M1164 107 L1158 104 M1164 107 L1170 104" class="stroke-main" />
+      <path d="M1164 111 L1157 108 M1164 111 L1171 108" class="stroke-main" />
+      <path d="M1164 115 L1156 112 M1164 115 L1172 112" class="stroke-main" />
+    
+
+      <line x1="1188" y1="103" x2="1188" y2="119" class="stroke-main" />
+      <path d="M1188 107 L1182 104 M1188 107 L1194 104" class="stroke-main" />
+      <path d="M1188 111 L1181 108 M1188 111 L1195 108" class="stroke-main" />
+      <path d="M1188 115 L1180 112 M1188 115 L1196 112" class="stroke-main" />
+    
+</svg>
