@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://encea.sn/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/PHOTO-2026-09-28-18-28-23.jpg</image:loc>
+      <image:title>Logo officiel ENCEA Business and Engineering School Dakar</image:title>
+      <image:caption>École d'enseignement supérieur agréée par l'État du Sénégal N°478-2026</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/PHOTO-2026-09-28-12-47-41.jpg</image:loc>
+      <image:title>Arrêté Ministériel Officiel d'Ouverture N°RepSEN/Ensup-Priv/AP/n° 478-2026</image:title>
+      <image:caption>Autorisation officielle du Ministère signée par le Directeur Général Pr Mamadou SIDIBE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/promotion-plage-yoff-bcao.jpg</image:loc>
+      <image:title>Promotion ENCEA réunie sur la plage BCAO de Yoff Dakar</image:title>
+      <image:caption>Étudiants et équipe pédagogique de l'ENCEA face à l'océan Atlantique</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/inauguration-assemblee-encea.jpg</image:loc>
+      <image:title>Assemblée inaugurale de l'ENCEA Dakar</image:title>
+      <image:caption>Cérémonie officielle de présentation et rentrée académique de l'ENCEA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/discours-inaugural-ambassadeurs.jpg</image:loc>
+      <image:title>Discours inaugural des ambassadeurs étudiants ENCEA</image:title>
+      <image:caption>Leadership étudiant et allocution officielle lors du lancement de l'ENCEA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/inauguration-cour-campus-encea.jpg</image:loc>
+      <image:title>Cour du Campus ENCEA à Yoff Apécsy 1 Dakar</image:title>
+      <image:caption>Rassemblement des étudiants devant le bâtiment principal de l'enceinte de Yoff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/ambassadrices-encea-dakar.jpg</image:loc>
+      <image:title>Ambassadrices de l'Excellence ENCEA Dakar</image:title>
+      <image:caption>Étudiantes en écharpe officielle de l'ENCEA Business and Engineering School</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://encea.sn/contenu/photo/ceremonie-conference-etudiants.jpg</image:loc>
+      <image:title>Séance d'orientation et de conférence académique ENCEA</image:title>
+      <image:caption>Présentation des maquettes de formation LMD et des Bourses d'Études</image:caption>
+    </image:image>
+  </url>
+</urlset>

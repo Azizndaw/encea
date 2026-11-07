@@ -1,0 +1,10 @@
+# Robots.txt pour ENCEA Business and Engineering School
+# https://encea.sn/
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /.gemini/
+
+# Sitemap officiel
+Sitemap: https://encea.sn/sitemap.xml
