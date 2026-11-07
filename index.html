@@ -34,7 +34,11 @@
 
   <link rel="icon" href="contenu/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="contenu/favicon.png">
-  <link rel="stylesheet" href="styles.css?v=6.0">
+    <!-- Typographies d'Élite (Inspiration IAM & Grandes Écoles de Commerce) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=7.0">
 
   <!-- Styles critiques prioritaires (anti-FOUC & sécurité de rendu immédiat) -->
   <style>
@@ -412,6 +416,65 @@
     </div>
   </section>
 
+  <!-- BANDEAU DATES IMPORTANTES & CALENDRIER DES RENTRÉES (STYLE IAM DAKAR) -->
+  <section class="dates-banner-section" id="dates-importantes">
+    <div class="dates-banner-container">
+      <div class="dates-header-col">
+        <span class="dates-badge-top">Agenda 2026-2027</span>
+        <h3 class="serif">Dates Importantes</h3>
+        <p>Préparez dès aujourd'hui votre intégration à l'ENCEA.</p>
+      </div>
+
+      <div class="dates-cards-grid">
+        <!-- DATE 1: BOURSES -->
+        <div class="date-card">
+          <div class="date-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/></svg>
+          </div>
+          <div class="date-card-content">
+            <span class="date-tag-status open">Session Ouverte</span>
+            <h4>Bourses d'Excellence (-50%)</h4>
+            <div class="date-highlight">Dépôt des dossiers en cours</div>
+            <p>Attribution sur examen des bulletins et relevés du Bac.</p>
+          </div>
+        </div>
+
+        <!-- DATE 2: LICENCES -->
+        <div class="date-card highlight">
+          <div class="date-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <div class="date-card-content">
+            <span class="date-tag-status rentree">Rentrée Officielle</span>
+            <h4>Rentrée des Licences (Bac+3)</h4>
+            <div class="date-highlight">08 Octobre 2026</div>
+            <p>4 filières LMD : Informatique, Génie Civil, MA, GCT.</p>
+          </div>
+        </div>
+
+        <!-- DATE 3: CERTIFICATS IA -->
+        <div class="date-card">
+          <div class="date-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+          </div>
+          <div class="date-card-content">
+            <span class="date-tag-status cycle">Admission Permanente</span>
+            <h4>Certifications en IA & Pro</h4>
+            <div class="date-highlight">Cycles courts (3 à 6 mois)</div>
+            <p>Formations intensives en cours du soir et week-end.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dates-cta-col">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-dates-action">
+          Déposer un Dossier en Ligne →
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ACADEMICS (DEPARTMENTS & DIPLÔMES DE LICENCE) -->
   <section class="academics" id="academics">
     <div class="section-header section-header-center">
@@ -428,6 +491,14 @@
       </div>
     </div>
 
+    <!-- ONGLET DE FILTRAGE DES PROGRAMMES (STYLE GROUPE IAM) -->
+    <div class="program-filter-tabs">
+      <button type="button" class="filter-tab-btn active" data-filter="all">Tous les Programmes</button>
+      <button type="button" class="filter-tab-btn" data-filter="mdi">Management & Droit (MDI)</button>
+      <button type="button" class="filter-tab-btn" data-filter="st">Sciences & Technologies (ST)</button>
+      <button type="button" class="filter-tab-btn" data-filter="cert">Certifications IA & Pro</button>
+    </div>
+
     <!-- DOMAINE 1: MDI -->
     <div class="domain-group-title">
       <span class="domain-badge">Domaine 1</span>
@@ -435,7 +506,7 @@
     </div>
     <div class="academics-grid" style="margin-bottom: 50px;">
       <!-- MDI 1 -->
-      <div class="academic-card">
+      <div class="academic-card" data-category="st" data-category="mdi">
         <div class="academic-card-img-wrapper">
           <img src="contenu/PHOTO-2026-09-28-12-39-49.jpg" alt="Licence Management des Affaires ENCEA">
         </div>
@@ -457,7 +528,7 @@
       </div>
 
       <!-- MDI 2 -->
-      <div class="academic-card">
+      <div class="academic-card" data-category="st" data-category="mdi">
         <div class="academic-card-img-wrapper">
           <img src="contenu/PHOTO-2026-09-28-12-39-49 (3).jpg" alt="Licence Gouvernance des Collectivités Territoriales ENCEA">
         </div>
@@ -486,7 +557,7 @@
     </div>
     <div class="academics-grid">
       <!-- ST 1 -->
-      <div class="academic-card">
+      <div class="academic-card" data-category="st">
         <div class="academic-card-img-wrapper">
           <img src="contenu/PHOTO-2026-09-28-12-39-49 (1).jpg" alt="Licence Ingénierie Informatique ENCEA">
         </div>
@@ -508,7 +579,7 @@
       </div>
 
       <!-- ST 2 -->
-      <div class="academic-card">
+      <div class="academic-card" data-category="st">
         <div class="academic-card-img-wrapper">
           <img src="contenu/PHOTO-2026-09-28-12-39-49 (2).jpg" alt="Licence Ingénierie Génie Civil ENCEA">
         </div>
@@ -878,7 +949,57 @@
     </div>
   </section>
 
-  <!-- SECTION CONTACT DIRECT & PLAN D'ACCÈS (NOUVEAU) -->
+    <!-- SECTION PARTENAIRES & ÉCOSYSTÈME D'EMPLOYABILITÉ (STYLE GROUPE IAM) -->
+  <section class="partners-showcase-section" id="partenaires">
+    <div class="section-header section-header-center">
+      <span class="domain-badge" style="margin-bottom:12px;">Employabilité & Insertion</span>
+      <h2 class="serif">Nos Partenaires & Domaines d'Immersion</h2>
+      <div class="academic-line-divider"></div>
+      <p class="subtitle" style="color:var(--text-secondary); max-width:850px; margin:16px auto 0;">
+        À l'image des plus grandes écoles de management et d'ingénierie d'Afrique de l'Ouest, l'ENCEA noue des passerelles directes avec le tissu économique pour garantir les stages et l'insertion de ses diplômés.
+      </p>
+    </div>
+
+    <div class="partners-pillars-grid">
+      <div class="partner-pillar-card">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+        </div>
+        <h4>BTP, Construction & Bureaux d'Études</h4>
+        <p>Partenariats de chantiers pour nos étudiants en Licence Génie Civil avec les grands groupes d'infrastructures opérant au Sénégal.</p>
+        <div class="pillar-tag">Stages 100% Terrain</div>
+      </div>
+
+      <div class="partner-pillar-card">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+        </div>
+        <h4>ESN, Pôles Numériques & Startups IA</h4>
+        <p>Immersion en entreprise logicielle, Cloud et cybersécurité pour nos futurs ingénieurs informaticiens et spécialistes en intelligence artificielle.</p>
+        <div class="pillar-tag">Tech & Projets Innovants</div>
+      </div>
+
+      <div class="partner-pillar-card">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <h4>Banques, Cabinets d'Audit & PME UEMOA</h4>
+        <p>Insertion dans les départements financiers, contrôle de gestion, marketing et négociation commerciale pour les diplômés en Management.</p>
+        <div class="pillar-tag">Finance & Entrepreneuriat</div>
+      </div>
+
+      <div class="partner-pillar-card">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <h4>Collectivités, Mairies & Agences Publiques</h4>
+        <p>Affectation pratique auprès des collectivités décentralisées et projets d'aménagement territorial pour la filière Gouvernance Territoriale.</p>
+        <div class="pillar-tag">Service Public & Développement</div>
+      </div>
+    </div>
+  </section>
+
+<!-- SECTION CONTACT DIRECT & PLAN D'ACCÈS (NOUVEAU) -->
   <section class="contact-section" id="contact">
     <div class="contact-container">
       <div class="contact-info-col">
@@ -1116,7 +1237,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=6.0"></script>
+  <script src="script.js?v=7.0"></script>
 </body>
 
 </html>

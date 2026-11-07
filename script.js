@@ -378,4 +378,55 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+  // FILTRAGE DYNAMIQUE DES PROGRAMMES (STYLE GROUPE IAM)
+  const filterTabs = document.querySelectorAll('.filter-tab-btn');
+  const academicCards = document.querySelectorAll('.academic-card');
+  const domainTitles = document.querySelectorAll('.domain-group-title');
+
+  if (filterTabs.length > 0) {
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        const filter = this.getAttribute('data-filter');
+
+        // Update active class
+        filterTabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        if (filter === 'cert') {
+          // Smooth scroll to certifications section
+          const certSec = document.getElementById('certifications');
+          if (certSec) {
+            certSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+          return;
+        }
+
+        // Filter academic cards
+        academicCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide or show domain group titles according to filter
+        if (domainTitles.length >= 2) {
+          if (filter === 'all') {
+            domainTitles[0].style.display = 'flex';
+            domainTitles[1].style.display = 'flex';
+          } else if (filter === 'mdi') {
+            domainTitles[0].style.display = 'flex';
+            domainTitles[1].style.display = 'none';
+          } else if (filter === 'st') {
+            domainTitles[0].style.display = 'none';
+            domainTitles[1].style.display = 'flex';
+          }
+        }
+      });
+    });
+  }
+
 });

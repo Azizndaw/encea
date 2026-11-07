@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: var(--font-sans);
   color: var(--text-primary);
   background: var(--blanc);
   overflow-x: hidden;
@@ -2333,5 +2333,337 @@ section {
   }
   .campus-featured-caption {
     padding: 20px 16px;
+  }
+}
+
+
+/* ==========================================================================
+   ===== COMPOSANTS INSPIRÉS DU GROUPE IAM (EXCELLENCE & PRESTIGE ACADÉMIQUE) =====
+   ========================================================================== */
+
+/* 1. BANDEAU DATES IMPORTANTES */
+.dates-banner-section {
+  background: linear-gradient(135deg, #021632 0%, #062046 100%);
+  color: var(--blanc);
+  padding: 45px 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  border-bottom: 1.5px solid var(--or-dore);
+  position: relative;
+  z-index: 10;
+}
+
+.dates-banner-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dates-header-col {
+  flex: 0 0 240px;
+}
+
+.dates-badge-top {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--or-dore);
+  border: 1px solid var(--or-dore);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.dates-header-col h3 {
+  font-size: 1.6rem;
+  color: var(--blanc);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.dates-header-col p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.dates-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  flex: 1;
+}
+
+.date-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 16px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  min-width: 250px;
+  flex: 1;
+  transition: all 0.25s ease;
+}
+
+.date-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--or-dore);
+  transform: translateY(-2px);
+}
+
+.date-card.highlight {
+  border-color: var(--or-dore);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.date-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.18);
+  color: var(--or-dore);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.date-card-content {
+  flex: 1;
+}
+
+.date-tag-status {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.date-tag-status.open {
+  background: rgba(37, 211, 102, 0.2);
+  color: #25D366;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+}
+
+.date-tag-status.rentree {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--or-dore);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.date-tag-status.cycle {
+  background: rgba(142, 209, 252, 0.2);
+  color: #8ed1fc;
+  border: 1px solid rgba(142, 209, 252, 0.4);
+}
+
+.date-card-content h4 {
+  font-size: 0.88rem;
+  color: var(--blanc);
+  margin-bottom: 4px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.date-highlight {
+  font-size: 0.95rem;
+  color: var(--or-dore);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.date-card-content p {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.dates-cta-col {
+  flex: 0 0 auto;
+}
+
+.btn-dates-action {
+  background: linear-gradient(135deg, #DFB73D 0%, #C79E2A 100%);
+  color: #021632;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 11px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-dates-action:hover {
+  background: linear-gradient(135deg, #ECD058 0%, #DFB73D 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+}
+
+/* 2. ONGLET DE FILTRAGE DES PROGRAMMES */
+.program-filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto 40px;
+  flex-wrap: wrap;
+}
+
+.filter-tab-btn {
+  background: var(--blanc);
+  border: 1.5px solid var(--gris-moyen);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab-btn:hover {
+  border-color: var(--or-dore);
+  color: var(--bleu-nuit);
+}
+
+.filter-tab-btn.active {
+  background: var(--bleu-nuit);
+  border-color: var(--bleu-nuit);
+  color: var(--or-dore);
+  box-shadow: 0 4px 12px rgba(2, 22, 50, 0.15);
+}
+
+/* 3. SECTION PARTENAIRES & ÉCOSYSTÈME */
+.partners-showcase-section {
+  padding: 80px 40px;
+  background: #FAF6EF;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.partners-pillars-grid {
+  max-width: 1200px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.partner-pillar-card {
+  background: var(--blanc);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  padding: 28px 22px;
+  box-shadow: 0 4px 16px rgba(2, 22, 50, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(2, 22, 50, 0.1);
+  border-color: var(--or-dore);
+}
+
+.pillar-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(2, 22, 50, 0.06);
+  color: var(--bleu-nuit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: all 0.25s ease;
+}
+
+.partner-pillar-card:hover .pillar-icon {
+  background: var(--bleu-nuit);
+  color: var(--or-dore);
+}
+
+.partner-pillar-card h4 {
+  font-size: 1.05rem;
+  color: var(--bleu-nuit);
+  margin-bottom: 10px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.partner-pillar-card p {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.pillar-tag {
+  align-self: flex-start;
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--bleu-nuit);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* RESPONSIVE DATES & PARTENAIRES */
+@media (max-width: 1050px) {
+  .partners-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dates-banner-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .dates-header-col {
+    flex: auto;
+  }
+  .dates-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .dates-cta-col {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .dates-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  flex: 1;
+}
+  .date-card {
+    min-width: 100%;
   }
 }
