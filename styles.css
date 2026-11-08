@@ -4745,3 +4745,145 @@ section {
     padding-bottom: 6px;
   }
 }
+
+
+/* ==========================================================================
+   RISD + USF + SAN JUAN COLLEGE DESIGN SYSTEM
+   - RISD : Typographie affirmée, photographies réelles valorisées, identité mémorable
+   - USF : Hiérarchie claire, actualités visibles, présentation institutionnelle
+   - San Juan College : Navigation simple, accès rapide aux formations et admissions
+   ========================================================================== */
+
+/* ACCÈS RAPIDE STYLE SAN JUAN COLLEGE */
+.quick-access-strip {
+  background: #04142B;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 12px 20px;
+  position: relative;
+  z-index: 25;
+}
+
+.quick-access-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.qa-label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--or-dore);
+  flex-shrink: 0;
+}
+
+.qa-links-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.qa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFFFF !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.qa-link:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--or-dore);
+  color: var(--or-dore) !important;
+  transform: translateY(-1px);
+}
+
+.qa-link.highlight {
+  background: var(--or-dore);
+  border-color: var(--or-dore);
+  color: #021632 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+}
+
+.qa-link.highlight:hover {
+  background: #E5BE42;
+  transform: translateY(-1px);
+}
+
+/* SECTION PAROLES DE NOS AMBASSADEURS (RISD EDITORIAL STYLE) */
+.ambassador-role-tag {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.15);
+  color: #021632;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  margin-top: 3px;
+}
+
+.testimonial-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #EDF2F7;
+  padding-top: 14px;
+  margin-top: auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #021632;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+}
+
+.testimonial-card-link:hover {
+  color: var(--or-dore);
+  text-decoration: underline;
+}
+
+/* RESPONSIVE ACCÈS RAPIDE */
+@media (max-width: 768px) {
+  .quick-access-strip {
+    padding: 10px 14px;
+  }
+  .quick-access-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .qa-links-group {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  .qa-link {
+    font-size: 0.78rem;
+    padding: 7px 12px;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
