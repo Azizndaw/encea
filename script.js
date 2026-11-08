@@ -429,4 +429,220 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+  // ==========================================================================
+  // DYNAMISME, DÉFILEMENT & ANIMATIONS (INSPIRATION GROUPE IAM)
+  // ==========================================================================
+
+  // ===== 9. EFFET MACHINE À ÉCRIRE HERO (TYPEWRITER DYNAMIQUE) =====
+  const typewriterEl = document.getElementById('typewriterWord');
+  if (typewriterEl) {
+    const words = [
+      "Ingénierie Informatique & IA",
+      "Bâtiment & Génie Civil",
+      "Management des Affaires (MDI)",
+      "Gouvernance & Droit Territorial",
+      "Entrepreneuriat & Leadership"
+    ];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 90;
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 45;
+      } else {
+        typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 85;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        typingSpeed = 2200; // Pause at end of word
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingSpeed = 400; // Pause before new word
+      }
+
+      setTimeout(typeEffect, typingSpeed);
+    }
+
+    typeEffect();
+  }
+
+  // ===== 10. GRAND CARROUSEL INTERACTIF DE PHOTOS ("LES IMAGES QUI BOUGENT") =====
+  const sliderWrapper = document.getElementById('campusSliderWrapper');
+  if (sliderWrapper) {
+    const slides = sliderWrapper.querySelectorAll('.campus-slide');
+    const prevBtn = document.getElementById('sliderPrevBtn');
+    const nextBtn = document.getElementById('sliderNextBtn');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    let sliderTimer = null;
+
+    function goToSlide(index) {
+      if (slides.length === 0) return;
+      slides[currentSlide].classList.remove('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+
+      currentSlide = (index + slides.length) % slides.length;
+
+      slides[currentSlide].classList.add('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      sliderTimer = setInterval(nextSlide, 4200);
+    }
+
+    function stopAutoSlide() {
+      if (sliderTimer) clearInterval(sliderTimer);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        startAutoSlide();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        startAutoSlide();
+      });
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        goToSlide(idx);
+        startAutoSlide();
+      });
+    });
+
+    // Pause au survol
+    sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+    sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+
+    // Support tactile (swipe smartphone)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    sliderWrapper.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAutoSlide();
+    }, { passive: true });
+
+    sliderWrapper.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchEndX < touchStartX - 45) {
+        nextSlide();
+      } else if (touchEndX > touchStartX + 45) {
+        prevSlide();
+      }
+      startAutoSlide();
+    }, { passive: true });
+
+    // Clic pour zoom Lightbox
+    slides.forEach(slide => {
+      slide.addEventListener('click', (e) => {
+        // Do not trigger if clicking navigation buttons
+        if (e.target.closest('.slider-control') || e.target.closest('.slider-dots')) return;
+        const img = slide.getAttribute('data-img');
+        const title = slide.getAttribute('data-title');
+        const desc = slide.getAttribute('data-desc');
+        if (img && typeof openLightbox === 'function') {
+          openLightbox(img, title, desc);
+        }
+      });
+    });
+
+    startAutoSlide();
+  }
+
+  // ===== 11. LIGHTBOX SUR LE RUBAN DE PHOTOS DÉFILANT =====
+  const photoStripItems = document.querySelectorAll('.photo-strip-item');
+  photoStripItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const img = item.getAttribute('data-img');
+      const title = item.getAttribute('data-title');
+      const desc = item.getAttribute('data-desc');
+      if (img && typeof openLightbox === 'function') {
+        openLightbox(img, title, desc);
+      }
+    });
+  });
+
+  // ===== 12. CHIFFRES CLÉS ANIMÉS AU SCROLL =====
+  const counters = document.querySelectorAll('.counter-number');
+  if (counters.length > 0 && 'IntersectionObserver' in window) {
+    let countersAnimated = false;
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersAnimated) {
+          countersAnimated = true;
+          counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'), 10);
+            const duration = 1600;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const currentVal = Math.floor(easeProgress * target);
+              counter.textContent = currentVal;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+          });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsBar = document.getElementById('stats');
+    if (statsBar) {
+      counterObserver.observe(statsBar);
+    }
+  }
+
+  // ===== 13. ANIMATIONS AU SCROLL (SCROLL REVEAL / AOS STYLE) =====
+  const revealElements = document.querySelectorAll('.news-card, .date-card, .academic-card, .contact-item-card, .partner-pillar-card, .scholarship-card');
+  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => {
+      el.classList.add('reveal-on-scroll');
+      revealObserver.observe(el);
+    });
+  }
+
 });
