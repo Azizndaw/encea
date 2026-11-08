@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=12.0">
+<link rel="stylesheet" href="styles.css?v=13.0">
 
   <!-- Styles critiques prioritaires (anti-FOUC & sécurité de rendu immédiat) -->
   <style>
@@ -439,6 +439,10 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform"
           target="_blank" rel="noopener" class="btn-hero-primary">Candidature & Bourses d'Études</a>
         <a href="#bourses" class="btn-hero-secondary">Guide des Bourses (-50%)</a>
+        <button type="button" class="btn-hero-video" id="btnPlayHeroVideo" aria-label="Voir la vidéo officielle du campus">
+          <span class="video-play-pulse"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span>Découvrir le Campus en Vidéo (1 min)</span>
+        </button>
       </div>
 
       <div class="autorisation-text">
@@ -743,6 +747,60 @@
       </div>
     </div>
 
+    <!-- SIMULATEUR INTERACTIF DE BOURSE (-50%) -->
+    <div class="scholarship-simulator-card" id="simulateurBourse">
+      <div class="simulator-header">
+        <span class="sim-badge">Simulateur Interactif & Transparent</span>
+        <h3 class="serif">Estimez votre Bourse d'Excellence (-50%) en 15 Secondes</h3>
+        <p>Sélectionnez votre profil scolaire pour connaître immédiatement le niveau d'aide financière et d'accompagnement réservé aux futurs bacheliers et étudiants.</p>
+      </div>
+
+      <div class="simulator-body">
+        <div class="sim-fields-row">
+          <div class="sim-field-group">
+            <label for="simFiliere">1. Filière envisagée :</label>
+            <select id="simFiliere" class="sim-select">
+              <option value="Licence Informatique & IA">Licence Informatique & Intelligence Artificielle (LMD)</option>
+              <option value="Licence Génie Civil & BTP">Licence Génie Civil & Ingénierie du Bâtiment (LMD)</option>
+              <option value="Licence Management des Affaires">Licence Management des Affaires & Gestion (LMD)</option>
+              <option value="Licence Droit Territorial">Licence Droit Territorial & Collectivités (LMD)</option>
+              <option value="Certifications Accélérées IA">Certifications Professionnelles en IA (3 à 6 mois)</option>
+            </select>
+          </div>
+
+          <div class="sim-field-group">
+            <label for="simMention">2. Votre profil / Mention au Baccalauréat :</label>
+            <select id="simMention" class="sim-select">
+              <option value="50">Mention Très Bien ou Bien (Moyenne ≥ 14/20) — Bourse -50%</option>
+              <option value="40">Mention Assez Bien (Moyenne entre 12 et 13.99/20) — Bourse -40%</option>
+              <option value="35">Mention Passable ou Réorientation — Bourse Sociale/Innovation -35%</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- RÉSULTAT DU CALCUL DYNAMIQUE -->
+        <div class="sim-result-box" id="simResultBox">
+          <div class="sim-result-discount">
+            <span class="sim-label-tag">Éligibilité Immédiate</span>
+            <div class="sim-discount-value" id="simDiscountValue">Bourse jusqu'à -50%</div>
+            <p class="sim-discount-desc" id="simDiscountDesc">
+              Félicitations ! Vous êtes éligible à la <strong>Bourse d'Excellence Académique (-50%)</strong>. L'ENCEA finance la moitié de vos droits de scolarité pour l'année académique 2026-2027.
+            </p>
+          </div>
+          <div class="sim-result-actions">
+            <a id="simWhatsappBtn" href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20d'apr%C3%A8s%20le%20simulateur,%20je%20suis%20%C3%A9ligible%20%C3%A0%20la%20Bourse%20d'Excellence%20-50%%20en%20Licence%20Informatique%20&%20IA.%20Voici%20mon%20bulletin%20:" 
+               target="_blank" rel="noopener" class="btn-sim-whatsapp">
+              💬 Bloquer ma Bourse par WhatsApp (+221 78 720 66 66)
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" 
+               target="_blank" rel="noopener" class="btn-sim-form">
+              Déposer mon Dossier de Bourse en Ligne →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="scholarship-cta-box">
       <h3 class="serif">Comment Solliciter une Bourse d'Excellence ?</h3>
       <p>La demande de bourse s'effectue en quelques clics en joignant vos bulletins et relevés de notes lors de votre candidature en ligne.</p>
@@ -950,6 +1008,160 @@
         </div>
       </div>
     </div>
+
+    <!-- 4 PILIERS DE LA VIE ÉTUDIANTE INTERACTIFS -->
+    <div class="campus-pillars-interactive">
+      <div class="section-header section-header-center" style="margin-bottom:24px;">
+        <span class="dates-badge-top">Expérience & Cadre de Vie</span>
+        <h3 class="serif" style="font-size:1.65rem; color:var(--bleu-nuit);">4 Piliers d'une Vie de Campus Vivante & Épanouie</h3>
+        <p style="color:var(--text-secondary); max-width:720px; margin:8px auto 0; font-size:0.95rem;">
+          À l'ENCEA, les études supérieures allient bien-être humain, exigence technique et émulation collective.
+        </p>
+      </div>
+
+      <div class="pillars-nav-pills" role="tablist">
+        <button class="pillar-nav-btn active" data-pillar="ocean" role="tab">🌊 Cadre Balnéaire (Yoff Plage)</button>
+        <button class="pillar-nav-btn" data-pillar="mentorship" role="tab">🤝 Mentorat 1-pour-1</button>
+        <button class="pillar-nav-btn" data-pillar="projects" role="tab">🚀 Projets Pratiques & Hackathons</button>
+        <button class="pillar-nav-btn" data-pillar="community" role="tab">🎭 Esprit de Famille & Leadership</button>
+      </div>
+
+      <div class="pillar-display-card" id="pillarDisplayCard">
+        <div class="pillar-card-content">
+          <span class="pillar-badge" id="pillarBadge">Environnement Serein</span>
+          <h4 class="serif" id="pillarTitle">Étudier au Bord de l'Atlantique : Sérénité et Concentration</h4>
+          <p id="pillarText">
+            Situé à Yoff Apécsy 1, face à la plage BCAO, notre campus offre un cadre d'air pur et de calme apaisant. Loin du tumulte et des embouteillages du centre-ville, les étudiants profitent d'une brise marine vivifiante propice à la réflexion profonde, à la créativité et aux sessions d'études en plein air.
+          </p>
+          <ul class="pillar-features-list" id="pillarList">
+            <li>Campus aéré face au littoral atlantique de Yoff</li>
+            <li>Salles d'études lumineuses et connectées haut débit</li>
+            <li>Cadre sécurisé et reposant favorisant l'équilibre mental</li>
+          </ul>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#contact" class="btn-dates-action" style="padding:10px 18px; font-size:0.86rem; display:inline-flex; width:auto;">
+              Planifier une Visite du Campus →
+            </a>
+            <button type="button" class="btn-hero-video" id="btnPlayCampusVideo" style="margin-top:0; padding:9px 18px; font-size:0.86rem;">
+              <span class="video-play-pulse" style="width:24px; height:24px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span>Voir la Vidéo avec Son</span>
+            </button>
+          </div>
+        </div>
+        <div class="pillar-card-media">
+          <img id="pillarImage" src="contenu/photo/promotion-plage-yoff-bcao.jpg" alt="Étudiants ENCEA sur la plage de Yoff" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========================================================================
+       PAROLES DE NOS AMBASSADEURS & ÉTUDIANTS (TÉMOIGNAGES AUTHENTIQUES)
+       ========================================================================== -->
+  <section class="testimonials-section" id="temoignages">
+    <div class="section-header section-header-center">
+      <span class="domain-badge">Communauté & Visages de l'Excellence</span>
+      <h2 class="serif">Paroles de nos Ambassadeurs & Étudiants</h2>
+      <div class="academic-line-divider"></div>
+      <p class="subtitle" style="color:var(--text-secondary); max-width:840px; margin:16px auto 0; font-size:1.05rem;">
+        Découvrez l'expérience ENCEA à travers les récits authentiques de ceux qui vivent le campus au quotidien face à l'océan à Yoff.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- TÉMOIGNAGE 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-top">
+          <div class="testimonial-avatar-wrapper">
+            <img src="contenu/photo/ambassadrices-encea-dakar.jpg" alt="Fatou Ndiaye & Khady Cissé" class="testimonial-avatar">
+            <span class="testimonial-verified-badge" title="Étudiante Ambassadrice">✓</span>
+          </div>
+          <div class="testimonial-author-meta">
+            <h4>Fatou Ndiaye & Khady Cissé</h4>
+            <span class="testimonial-filiere">Licence Ingénierie Informatique & IA</span>
+            <div class="testimonial-stars">★★★★★ <span class="stars-note">Promotion 2026</span></div>
+          </div>
+        </div>
+        <div class="testimonial-quote-icon">“</div>
+        <p class="testimonial-body">
+          À l'ENCEA, on ne reste pas passifs dans un grand amphi. Dès le premier semestre, nous codons sur des projets concrets avec le mentorat d'ingénieurs. Étudier face à la plage de Yoff offre un calme et une inspiration uniques au quotidien.
+        </p>
+        <div class="testimonial-badge-bottom">💻 Pôle Intelligence Artificielle</div>
+      </div>
+
+      <!-- TÉMOIGNAGE 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-top">
+          <div class="testimonial-avatar-wrapper">
+            <img src="contenu/photo/ambassadeurs-binome-encea.jpg" alt="Cheikh Omar Ba" class="testimonial-avatar">
+            <span class="testimonial-verified-badge" title="Étudiant Boursier">✓</span>
+          </div>
+          <div class="testimonial-author-meta">
+            <h4>Cheikh Omar Ba</h4>
+            <span class="testimonial-filiere">Licence Bâtiment & Génie Civil</span>
+            <div class="testimonial-stars">★★★★★ <span class="stars-note">Boursier d'Excellence</span></div>
+          </div>
+        </div>
+        <div class="testimonial-quote-icon">“</div>
+        <p class="testimonial-body">
+          Grâce à la Bourse d'Excellence (-50%), j'ai pu intégrer une école d'ingénierie d'élite sans peser sur les finances de ma famille. Les professeurs sont des praticiens de chantiers qui nous transmettent la réalité du BTP.
+        </p>
+        <div class="testimonial-badge-bottom">🏗️ Pôle Génie Civil & BTP</div>
+      </div>
+
+      <!-- TÉMOIGNAGE 3 -->
+      <div class="testimonial-card">
+        <div class="testimonial-top">
+          <div class="testimonial-avatar-wrapper">
+            <img src="contenu/photo/leadership-feminin-encea.jpg" alt="Aminata Diallo" class="testimonial-avatar">
+            <span class="testimonial-verified-badge" title="Étudiante Leader">✓</span>
+          </div>
+          <div class="testimonial-author-meta">
+            <h4>Aminata Diallo</h4>
+            <span class="testimonial-filiere">Licence Management des Affaires</span>
+            <div class="testimonial-stars">★★★★★ <span class="stars-note">Club Entrepreneuriat</span></div>
+          </div>
+        </div>
+        <div class="testimonial-quote-icon">“</div>
+        <p class="testimonial-body">
+          Ce qui m'a frappée dès l'inauguration, c'est l'écoute et l'esprit de famille qui règnent ici. On nous apprend à oser entreprendre, négocier et bâtir des projets solides pour le Sénégal et l'Afrique de l'Ouest.
+        </p>
+        <div class="testimonial-badge-bottom">📊 Management & Stratégie</div>
+      </div>
+
+      <!-- TÉMOIGNAGE 4 -->
+      <div class="testimonial-card">
+        <div class="testimonial-top">
+          <div class="testimonial-avatar-wrapper">
+            <img src="contenu/photo/visionnaires-afrique-etudiants.jpg" alt="Mamadou Lamine Diop" class="testimonial-avatar">
+            <span class="testimonial-verified-badge" title="Ambassadeur Campus">✓</span>
+          </div>
+          <div class="testimonial-author-meta">
+            <h4>Mamadou Lamine Diop</h4>
+            <span class="testimonial-filiere">Licence Droit Territorial & GCT</span>
+            <div class="testimonial-stars">★★★★★ <span class="stars-note">Ambassadeur Campus</span></div>
+          </div>
+        </div>
+        <div class="testimonial-quote-icon">“</div>
+        <p class="testimonial-body">
+          L'ENCEA forme des cadres intègres et visionnaires. Le travail en petits groupes et les études de cas pratiques préparent directement aux concours administratifs et aux carrières dans les collectivités locales.
+        </p>
+        <div class="testimonial-badge-bottom">🏛️ Gouvernance & Droit Public</div>
+      </div>
+    </div>
+
+    <div class="testimonials-cta-center">
+      <div class="testimonials-counter-banner">
+        <div class="tc-item"><span class="tc-num">100%</span> <span class="tc-txt">Mentorat Personnalisé</span></div>
+        <div class="tc-divider"></div>
+        <div class="tc-item"><span class="tc-num">Jusqu'à -50%</span> <span class="tc-txt">Bourses d'Excellence</span></div>
+        <div class="tc-divider"></div>
+        <div class="tc-item"><span class="tc-num">Max 35</span> <span class="tc-txt">Étudiants par Promotion</span></div>
+      </div>
+      <a href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20je%20souhaite%20%C3%A9changer%20avec%20un%20%C3%A9tudiant%20ambassadeur%20ou%20l'%C3%A9quipe%20d'orientation." 
+         target="_blank" rel="noopener" class="btn-human-connect">
+        💬 Échanger Directement avec un Conseiller ou un Ambassadeur
+      </a>
+    </div>
   </section>
 
   <!-- INSTITUTION / HISTOIRE -->
@@ -971,10 +1183,62 @@
     </div>
   </section>
 
-  <!-- BANNIÈRE DE LA DIRECTION -->
-  <section class="executive-banner">
-    <p class="statement serif">"Notre vocation est claire : cultiver l'excellence académique pour forger les cadres et ingénieurs juniors dont notre continent a urgemment besoin."</p>
-    <div class="author">Direction Générale de l'ENCEA</div>
+  <!-- MOT DE LA DIRECTION GÉNÉRALE & ENGAGEMENT HUMAIN -->
+  <section class="direction-human-section" id="vision-direction">
+    <div class="direction-human-container">
+      <div class="direction-image-col">
+        <div class="direction-photo-frame">
+          <img src="contenu/photo/discours-inaugural-ambassadeurs.jpg" alt="Discours de la Direction Générale ENCEA" loading="lazy">
+          <div class="direction-photo-caption">
+            <strong>Direction Générale & Pédagogique</strong>
+            <span>Cérémonie Solennelle d'Ouverture • Campus Yoff Apécsy 1 Dakar</span>
+          </div>
+        </div>
+      </div>
+      <div class="direction-text-col">
+        <span class="dates-badge-top">Vision & Engagement Humain</span>
+        <h3 class="serif">« Chez nous, chaque étudiant a un nom, un visage et un avenir qui compte. »</h3>
+        <div class="direction-quote-divider"></div>
+        <p class="direction-lead">
+          Choisir son école supérieure est un moment décisif pour tout jeune bachelier et pour sa famille. À l'ENCEA, nous avons fait le serment qu'aucun étudiant ne sera un numéro perdu dans un amphi surchargé.
+        </p>
+        <p>
+          Notre vocation est d'allier l'exigence académique des standards internationaux LMD à une proximité humaine quotidienne. Nos enseignants sont des praticiens de haut niveau qui prennent le temps d'écouter, d'accompagner, de motiver et d'orienter chaque apprenant vers la réussite de son projet professionnel ou entrepreneurial.
+        </p>
+        <div class="direction-commitments-grid">
+          <div class="commitment-pill">
+            <span class="cp-icon">🎯</span>
+            <div>
+              <strong>Classes à Effectifs Maîtrisés (Max 35)</strong>
+              <p>Des interactions quotidiennes et un suivi individualisé des apprentissages.</p>
+            </div>
+          </div>
+          <div class="commitment-pill">
+            <span class="cp-icon">🤝</span>
+            <div>
+              <strong>Mentorat 1-pour-1 & Écoute Active</strong>
+              <p>Un tuteur académique dédié pour guider l'étudiant tout au long de son cursus.</p>
+            </div>
+          </div>
+          <div class="commitment-pill">
+            <span class="cp-icon">💡</span>
+            <div>
+              <strong>Incubateur & Entrepreneuriat Pratique</strong>
+              <p>Coaching personnalisé pour concrétiser des projets d'entreprises réels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="direction-signature-row">
+          <div class="signature-details">
+            <div class="sign-name">La Direction Générale & le Conseil Pédagogique</div>
+            <div class="sign-role">ENCEA Business and Engineering School • Dakar, Sénégal</div>
+          </div>
+          <a href="#contact" class="btn-dates-action" style="padding:11px 22px; font-size:0.88rem;">
+            Rencontrer l'Équipe Pédagogique →
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FAQ ACCORDÉON INTERACTIVE -->
@@ -1289,12 +1553,63 @@
     </div>
   </footer>
 
-  <!-- BOUTON FLOTTANT WHATSAPP OFFICIEL SÉNÉGAL -->
-  <a href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20je%20souhaite%20des%20informations%20sur%20les%20Licences%20et%20les%20Bourses%20d'Excellence."
-    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp avec le service des admissions">
-    <span class="whatsapp-tooltip">Discuter avec les Admissions</span>
-    <svg width="28" height="28" viewBox="0 0 24 24" style="width:28px;height:28px;fill:#FFFFFF;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
-  </a>
+  <!-- DOCK FLOTTANT D'ASSISTANCE & PROXIMITÉ HUMAINE (UI/UX MODERNE) -->
+  <div class="human-dock-wrapper" id="humanDockWrapper">
+    <div class="human-dock-popover" id="humanDockPopover">
+      <div class="hdp-header">
+        <div class="hdp-avatar-group">
+          <img src="contenu/photo/ambassadrices-encea-dakar.jpg" alt="Conseillère Admissions ENCEA" class="hdp-avatar">
+          <span class="hdp-status-dot" title="En ligne"></span>
+        </div>
+        <div>
+          <strong>Orientation & Admissions ENCEA</strong>
+          <p>En ligne • Réponse rapide 7j/7</p>
+        </div>
+        <button class="hdp-close-btn" id="hdpCloseBtn" aria-label="Fermer la boîte de dialogue">✕</button>
+      </div>
+      <div class="hdp-body">
+        <p class="hdp-welcome">Bonjour ! 👋 Vous avez une question sur les Licences ou les Bourses d'Excellence (-50%) ? Nous sommes là pour vous aider.</p>
+        <div class="hdp-actions">
+          <a href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20je%20souhaite%20des%20informations%20sur%20les%20Licences%20et%20Bourses%20d'Excellence." target="_blank" rel="noopener" class="hdp-action-btn primary">
+            <span>💬 Échanger sur WhatsApp Direct</span>
+            <small>+221 78 720 66 66 (Admissions)</small>
+          </a>
+          <a href="#simulateurBourse" class="hdp-action-btn secondary" id="hdpSimLink">
+            <span>🎓 Simuler ma Bourse (-50%)</span>
+            <small>Calcul immédiat en 15 secondes</small>
+          </a>
+          <a href="#contact" class="hdp-action-btn secondary" id="hdpContactLink">
+            <span>🏛️ Planifier une Visite du Campus</span>
+            <small>Yoff Apécsy 1, face à la plage BCAO</small>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <button class="human-dock-trigger" id="humanDockTrigger" aria-label="Besoin d'aide ? Discutez avec nous">
+      <span class="hdt-pulse"></span>
+      <span class="hdt-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+      </span>
+      <span class="hdt-label">Besoin d'un conseil ? <strong>Écrivez-nous</strong></span>
+    </button>
+  </div>
+
+  <!-- MODALE VIDÉO OFFICIELLE ENCEA AVEC SON -->
+  <div class="video-modal-overlay" id="videoModalOverlay" role="dialog" aria-modal="true" aria-label="Vidéo officielle du Campus ENCEA">
+    <div class="video-modal-card">
+      <div class="video-modal-header">
+        <h4>Présentation Officielle • ENCEA Business and Engineering School</h4>
+        <button type="button" class="video-modal-close" id="videoModalCloseBtn" aria-label="Fermer la vidéo">✕</button>
+      </div>
+      <div class="video-modal-body">
+        <video id="campusOfficialVideo" controls playsinline preload="none" poster="contenu/hero-poster.jpg" style="width:100%; border-radius:0 0 8px 8px; background:#000;">
+          <source src="contenu/VIDEO-2026-09-28-12-38-49.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture vidéo.
+        </video>
+      </div>
+    </div>
+  </div>
 
   <!-- MODALE GLOBALE DYNAMIQUE -->
   <div class="global-modal-overlay" id="globalModalOverlay" role="dialog" aria-modal="true">
@@ -1309,7 +1624,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=12.0"></script>
+  <script src="script.js?v=13.0"></script>
 </body>
 
 </html>

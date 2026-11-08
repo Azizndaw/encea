@@ -630,4 +630,189 @@ document.addEventListener('DOMContentLoaded', function () {
   // ===== 13. ANIMATIONS AU SCROLL (SANS DISPARITION DE CONTENU) =====
   // Tous les elements restent 100% visibles et lisibles pour garantir la clarte du texte.
 
+  // ===== 14. EXPÉRIENCE UI/UX : MODALE VIDÉO DU CAMPUS =====
+  const videoModal = document.getElementById('videoModalOverlay');
+  const videoElem = document.getElementById('campusOfficialVideo');
+  const videoCloseBtn = document.getElementById('videoModalCloseBtn');
+  const playHeroBtn = document.getElementById('btnPlayHeroVideo');
+  const playCampusBtn = document.getElementById('btnPlayCampusVideo');
+
+  function openVideoModal() {
+    if (videoModal && videoElem) {
+      videoModal.classList.add('visible');
+      videoElem.currentTime = 0;
+      videoElem.play().catch(() => {});
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeVideoModal() {
+    if (videoModal && videoElem) {
+      videoModal.classList.remove('visible');
+      videoElem.pause();
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (playHeroBtn) playHeroBtn.addEventListener('click', openVideoModal);
+  if (playCampusBtn) playCampusBtn.addEventListener('click', openVideoModal);
+  if (videoCloseBtn) videoCloseBtn.addEventListener('click', closeVideoModal);
+  if (videoModal) {
+    videoModal.addEventListener('click', function (e) {
+      if (e.target === videoModal) closeVideoModal();
+    });
+  }
+
+  // ===== 15. EXPÉRIENCE UI/UX : SIMULATEUR DE BOURSE D'ÉTUDES =====
+  const simFiliere = document.getElementById('simFiliere');
+  const simMention = document.getElementById('simMention');
+  const simDiscountValue = document.getElementById('simDiscountValue');
+  const simDiscountDesc = document.getElementById('simDiscountDesc');
+  const simWhatsappBtn = document.getElementById('simWhatsappBtn');
+
+  function updateSimulator() {
+    if (!simMention || !simFiliere || !simDiscountValue || !simDiscountDesc || !simWhatsappBtn) return;
+    const rate = simMention.value;
+    const filiere = simFiliere.value;
+
+    let discountText = "Bourse jusqu'à -50%";
+    let descText = "Félicitations ! Votre profil vous rend éligible à la <strong>Bourse d'Excellence Académique (-50%)</strong> pour la formation en <strong>" + filiere + "</strong>.";
+
+    if (rate === '40') {
+      discountText = "Bourse jusqu'à -40%";
+      descText = "Excellent ! Vous êtes éligible à la <strong>Bourse Sociale & Fraternité (-40%)</strong> pour la formation en <strong>" + filiere + "</strong>.";
+    } else if (rate === '35') {
+      discountText = "Bourse jusqu'à -35%";
+      descText = "Votre dossier est pré-qualifié pour la <strong>Bourse Innovation & Soutien (-35%)</strong> en <strong>" + filiere + "</strong> sur examen des relevés de notes.";
+    }
+
+    simDiscountValue.textContent = discountText;
+    simDiscountDesc.innerHTML = descText;
+
+    const message = "Bonjour ENCEA, d'après le simulateur, je suis éligible à la Bourse -" + rate + "% pour la formation " + filiere + ". Voici mon relevé de notes :";
+    simWhatsappBtn.href = "https://wa.me/221787206666?text=" + encodeURIComponent(message);
+  }
+
+  if (simFiliere) simFiliere.addEventListener('change', updateSimulator);
+  if (simMention) simMention.addEventListener('change', updateSimulator);
+
+  // ===== 16. EXPÉRIENCE UI/UX : 4 PILIERS DE LA VIE ÉTUDIANTE =====
+  const pillarData = {
+    ocean: {
+      badge: "Environnement Serein",
+      title: "Étudier au Bord de l'Atlantique : Sérénité et Concentration",
+      text: "Situé à Yoff Apécsy 1, face à la plage BCAO, notre campus offre un cadre d'air pur et de calme apaisant. Loin du tumulte et des embouteillages du centre-ville, les étudiants profitent d'une brise marine vivifiante propice à la réflexion profonde, à la créativité et aux sessions d'études en plein air.",
+      list: [
+        "Campus aéré face au littoral atlantique de Yoff",
+        "Salles d'études lumineuses et connectées haut débit",
+        "Cadre sécurisé et reposant favorisant l'équilibre mental"
+      ],
+      img: "contenu/photo/promotion-plage-yoff-bcao.jpg"
+    },
+    mentorship: {
+      badge: "Proximité & Accompagnement",
+      title: "Mentorat 1-pour-1 : Un Enseignant Référent pour Chaque Étudiant",
+      text: "À l'ENCEA, nous refusons l'anonymat des universités de masse. Nos classes à effectifs plafonnés (max 35 étudiants) permettent aux professeurs de connaître personnellement chaque étudiant, d'identifier ses points forts et de l'accompagner pas à pas dans sa montée en compétences.",
+      list: [
+        "Tutorat individualisé et entretiens d'orientation réguliers",
+        "Disponibilité directe des enseignants en dehors des cours",
+        "Suivi rigoureux de l'assiduité et des performances LMD"
+      ],
+      img: "contenu/photo/etudiants-campus-yoff-encea.jpg"
+    },
+    projects: {
+      badge: "Pédagogie Active",
+      title: "Projets Pratiques, Hackathons & Résolution de Cas Réels",
+      text: "Dès la première année, les cours théoriques sont immédiatement mis en pratique. Les étudiants en informatique développent des applications avec IA, ceux de Génie Civil modélisent des structures BTP, et ceux de Management pilotent des études de marché et des business plans réels.",
+      list: [
+        "Hackathons et challenges d'innovation semestriels",
+        "Visites régulières de chantiers, d'entreprises et de datacenters",
+        "Stages pratiques obligatoires intégrés au cursus LMD"
+      ],
+      img: "contenu/photo/etudiantes-presentation-encea.jpg"
+    },
+    community: {
+      badge: "Vie Associative & Éthique",
+      title: "Esprit de Famille, Clubs Étudiants & Leadership Panafricain",
+      text: "Rejoindre l'ENCEA, c'est entrer dans une communauté soudée où l'entraide entre promotions est la règle. Nos clubs (art oratoire, tech, sport, entrepreneuriat féminin) forgent l'esprit d'équipe, la prise de parole en public et le sens des responsabilités citoyennes.",
+      list: [
+        "Club d'Éloquence et de Débat Citoyen",
+        "Comité Leadership Féminin et Mentorat des Nouvelles Arrivantes",
+        "Réseau d'anciens et d'ambassadeurs solidaires à travers l'Afrique"
+      ],
+      img: "contenu/photo/esprit-communaute-encea.jpg"
+    }
+  };
+
+  const pillarButtons = document.querySelectorAll('.pillar-nav-btn');
+  const pillarBadge = document.getElementById('pillarBadge');
+  const pillarTitle = document.getElementById('pillarTitle');
+  const pillarText = document.getElementById('pillarText');
+  const pillarList = document.getElementById('pillarList');
+  const pillarImage = document.getElementById('pillarImage');
+
+  pillarButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const key = this.getAttribute('data-pillar');
+      const data = pillarData[key];
+      if (!data) return;
+
+      pillarButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      if (pillarBadge) pillarBadge.textContent = data.badge;
+      if (pillarTitle) pillarTitle.textContent = data.title;
+      if (pillarText) pillarText.textContent = data.text;
+      if (pillarImage) {
+        pillarImage.style.opacity = '0.3';
+        setTimeout(() => {
+          pillarImage.src = data.img;
+          pillarImage.style.opacity = '1';
+        }, 150);
+      }
+      if (pillarList) {
+        pillarList.innerHTML = data.list.map(item => '<li>' + item + '</li>').join('');
+      }
+    });
+  });
+
+  // ===== 17. EXPÉRIENCE UI/UX : DOCK D'ASSISTANCE HUMAINE & PROXIMITÉ =====
+  const humanTrigger = document.getElementById('humanDockTrigger');
+  const humanPopover = document.getElementById('humanDockPopover');
+  const humanCloseBtn = document.getElementById('hdpCloseBtn');
+  const hdpSimLink = document.getElementById('hdpSimLink');
+  const hdpContactLink = document.getElementById('hdpContactLink');
+
+  if (humanTrigger && humanPopover) {
+    humanTrigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      humanPopover.classList.toggle('visible');
+    });
+
+    if (humanCloseBtn) {
+      humanCloseBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        humanPopover.classList.remove('visible');
+      });
+    }
+
+    if (hdpSimLink) {
+      hdpSimLink.addEventListener('click', function () {
+        humanPopover.classList.remove('visible');
+      });
+    }
+
+    if (hdpContactLink) {
+      hdpContactLink.addEventListener('click', function () {
+        humanPopover.classList.remove('visible');
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      if (!humanPopover.contains(e.target) && !humanTrigger.contains(e.target)) {
+        humanPopover.classList.remove('visible');
+      }
+    });
+  }
+
 });
