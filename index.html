@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=13.0">
+<link rel="stylesheet" href="styles.css?v=14.0">
 
   <!-- Styles critiques prioritaires (anti-FOUC & sécurité de rendu immédiat) -->
   <style>
@@ -420,62 +420,63 @@
     </div>
   </div>
 
-  <!-- HERO -->
-  <section class="hero" id="accueil">
-    <video autoplay muted loop playsinline preload="metadata" poster="contenu/hero-poster.jpg">
-      <source src="contenu/VIDEO-2026-09-28-12-38-49.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="scholarship-hero-badge">Rentrée 2026-2027 • Bourses d'Excellence jusqu'à -50%</div>
-      <h1 class="serif">L'École des Visionnaires d'Afrique</h1>
-      <div class="hero-typewriter-container">
-        <span class="typewriter-prefix">Former les Leaders de Demain en : </span>
-        <span class="typewriter-text" id="typewriterWord">Ingénierie Informatique & IA</span><span class="typewriter-cursor">|</span>
+  <!-- HERO SECTION PREMIUM (POINT 1 : MOINS DE TEXTE, MESSAGE FORT, VRAIE PHOTO, 2 ACTIONS) -->
+  <section class="hero-premium" id="accueil">
+    <div class="hero-bg-media">
+      <img src="contenu/photo/inauguration-cour-campus-encea.jpg" alt="Campus ENCEA Dakar Yoff" class="hero-bg-img" fetchpriority="high">
+      <div class="hero-bg-overlay"></div>
+    </div>
+    <div class="hero-inner-container">
+      <div class="hero-pretitle-badge">
+        <span class="badge-dot-gold"></span>
+        <span>Arrêté Ministériel N°RepSEN/Ensup-Priv/AP/n° 478-2026</span>
       </div>
-      <p class="subtitle">L'École des Nouveaux Chefs d'Entreprises Africains (ENCEA Business and Engineering School) est un établissement d'enseignement supérieur privé d'élite qui forme, en cycle de licence LMD, les cadres et ingénieurs juniors moteurs de l'émergence économique du Sénégal et du continent.</p>
-
-      <div class="hero-buttons">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform"
-          target="_blank" rel="noopener" class="btn-hero-primary">Candidature & Bourses d'Études</a>
-        <a href="#bourses" class="btn-hero-secondary">Guide des Bourses (-50%)</a>
-        <button type="button" class="btn-hero-video" id="btnPlayHeroVideo" aria-label="Voir la vidéo officielle du campus">
-          <span class="video-play-pulse"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span>Découvrir le Campus en Vidéo (1 min)</span>
-        </button>
+      <h1 class="hero-headline serif">
+        L'École des Nouveaux Chefs d'Entreprises Africains
+      </h1>
+      <p class="hero-subheadline">
+        Formations d'État en <strong>Ingénierie Informatique & IA, Génie Civil et Management des Affaires</strong>. Une pédagogie d'excellence à taille humaine sur un campus face à l'océan à Yoff.
+      </p>
+      <div class="hero-actions-group">
+        <a href="#academics" class="btn-hero-main">
+          <span>Découvrir nos formations</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-hero-outline">
+          <span>Candidater</span>
+        </a>
       </div>
-
-      <div class="autorisation-text">
-        Autorisé par l'État du Sénégal — N°RepSEN/Ensup-Priv/AP/n°478-2026
+      <div class="hero-meta-reassurance">
+        <span>Rentrée Solennelle : 08 Octobre 2026</span>
+        <span class="meta-sep">•</span>
+        <span>Bourses d'Excellence jusqu'à -50%</span>
+        <span class="meta-sep">•</span>
+        <span>Campus Yoff Apécsy 1, Dakar</span>
       </div>
     </div>
   </section>
 
-  <!-- FRISE TRADITIONNELLE BOGOLAN / ADINKRA -->
-  <div class="frieze-banner"></div>
-
-  <!-- BANNIÈRE DE PRESTIGE : CHIFFRES CLÉS ET AUTORITÉ -->
-  <section class="stats-section" id="stats">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number"><span class="counter-number" data-target="180">0</span> <span class="stat-unit" style="font-size:0.7em;">ECTS</span></div>
-        <div class="stat-label">Architecture LMD Harmonisée</div>
-        <div class="stat-accent-line"></div>
+  <!-- BANDEAU D'AUTORITÉ DISCRET & LÉGER (POINT 3) -->
+  <section class="authority-bar" id="stats">
+    <div class="authority-bar-container">
+      <div class="auth-bar-item">
+        <strong>180 ECTS</strong>
+        <span>Architecture LMD Internationale</span>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">Jusqu'à -<span class="counter-number" data-target="50">0</span>%</div>
-        <div class="stat-label">Bourses d'Excellence & Aides</div>
-        <div class="stat-accent-line"></div>
+      <div class="auth-bar-sep">•</div>
+      <div class="auth-bar-item">
+        <strong>Jusqu'à -50%</strong>
+        <span>Bourses d'Excellence & Aides</span>
       </div>
-      <div class="stat-item">
-        <div class="stat-number"><span class="counter-number" data-target="4">0</span> <span class="stat-unit" style="font-size:0.7em;">Licences</span></div>
-        <div class="stat-label">Domaines Clés : MDI & ST</div>
-        <div class="stat-accent-line"></div>
+      <div class="auth-bar-sep">•</div>
+      <div class="auth-bar-item">
+        <strong>4 Licences</strong>
+        <span>Diplômes d'État Homologués</span>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">N°<span class="counter-number" data-target="478">0</span>-2026</div>
-        <div class="stat-label">Arrêté Officiel Ministère Sénégal</div>
-        <div class="stat-accent-line"></div>
+      <div class="auth-bar-sep">•</div>
+      <div class="auth-bar-item">
+        <strong>Arrêté N°478-2026</strong>
+        <span>Ministère de l'Enseignement Supérieur</span>
       </div>
     </div>
   </section>
@@ -542,127 +543,213 @@
   <!-- ACADEMICS (DEPARTMENTS & DIPLÔMES DE LICENCE) -->
   <section class="academics" id="academics">
     <div class="section-header section-header-center">
-      <h2 class="serif">Nos Programmes de Premier Cycle (Licence Bac+3)</h2>
+      <span class="dates-badge-top">Programmes Homologués Bac+3</span>
+      <h2 class="serif">Nos Formations de Premier Cycle (Licence LMD)</h2>
       <div class="academic-line-divider"></div>
-      <p class="subtitle" style="color:var(--text-secondary); max-width:850px; margin:20px auto 0;">
-        L'ENCEA délivre quatre diplômes de Licence répartis en deux domaines pédagogiques harmonisés. Chaque parcours respecte scrupuleusement la réglementation LMD internationale :
+      <p class="subtitle" style="color:var(--text-secondary); max-width:850px; margin:16px auto 0; font-size:1.05rem;">
+        L'ENCEA délivre quatre diplômes de Licence d'État accrédités, harmonisés sur les standards internationaux LMD (180 crédits ECTS, 6 semestres, stage pratique obligatoire).
       </p>
-
-      <!-- ENCADRÉ ACADÉMIQUE INSTITUTIONNEL -->
-      <div class="architecture-box">
-        <strong>Architecture réglementaire LMD :</strong>
-        <span class="specs">180 ECTS • 4 500 Heures d'enseignement • 6 Semestres • Stage Pratique Obligatoire</span>
-      </div>
     </div>
 
-    <!-- ONGLET DE FILTRAGE DES PROGRAMMES (STYLE GROUPE IAM) -->
-    <div class="program-filter-tabs">
-      <button type="button" class="filter-tab-btn active" data-filter="all">Tous les Programmes</button>
-      <button type="button" class="filter-tab-btn" data-filter="mdi">Management & Droit (MDI)</button>
-      <button type="button" class="filter-tab-btn" data-filter="st">Sciences & Technologies (ST)</button>
-      <button type="button" class="filter-tab-btn" data-filter="cert">Certifications IA & Pro</button>
-    </div>
+    <!-- GRILLE DES 4 CARTES DE FORMATIONS TRAVAILLÉES (POINT 2) -->
+    <div class="formations-refined-grid">
+      
+      <!-- FORMATION 1 : INFORMATIQUE & IA -->
+      <div class="formation-item-card">
+        <div class="f-card-media">
+          <img src="contenu/PHOTO-2026-09-28-12-39-49 (1).jpg" alt="Licence Ingénierie Informatique & IA" loading="lazy">
+          <span class="f-domain-tag">Sciences & Technologies</span>
+        </div>
+        <div class="f-card-body">
+          <h3 class="serif f-card-title">Licence Ingénierie Informatique & Intelligence Artificielle</h3>
+          <p class="f-card-summary">
+            Concevoir des logiciels modernes, sécuriser les réseaux et intégrer des technologies d'intelligence artificielle et de Cloud au service des entreprises.
+          </p>
 
-    <!-- DOMAINE 1: MDI -->
-    <div class="domain-group-title">
-      <span class="domain-badge">Domaine 1</span>
-      <h3 class="serif">Management & Développement International (MDI)</h3>
-    </div>
-    <div class="academics-grid" style="margin-bottom: 50px;">
-      <!-- MDI 1 -->
-      <div class="academic-card" data-category="st" data-category="mdi">
-        <div class="academic-card-img-wrapper">
-          <img src="contenu/PHOTO-2026-09-28-12-39-49.jpg" alt="Licence Management des Affaires ENCEA" loading="lazy">
-        </div>
-        <div class="academic-content">
-          <div class="dept-label">Licence • Domaine MDI • 180 ECTS</div>
-          <h3 class="serif">Management des Affaires (MA)</h3>
-          <p>Former des dirigeants, gestionnaires et stratèges d'entreprise capables d'identifier et transformer les opportunités économiques du marché ouest-africain.</p>
-          <div class="card-tags">
-            <span class="card-tag">Finance & Gestion</span>
-            <span class="card-tag">Stratégie PME</span>
-            <span class="card-tag">Droit OHADA</span>
-            <span class="card-tag">Marketing Digital</span>
+          <!-- MÉTADONNÉES CLAIRES : NIVEAU, DURÉE, DIPLÔME -->
+          <div class="f-meta-row">
+            <div class="f-meta-cell">
+              <span class="f-label">Niveau</span>
+              <strong class="f-val">Bac+3</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Durée</span>
+              <strong class="f-val">3 ans (180 ECTS)</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Diplôme</span>
+              <strong class="f-val">Diplôme d'État</strong>
+            </div>
           </div>
-          <div class="academic-card-actions">
-            <button type="button" class="btn-programme-modal" data-programme="ma">Consulter le Programme →</button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-programme-apply">Postuler</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- MDI 2 -->
-      <div class="academic-card" data-category="st" data-category="mdi">
-        <div class="academic-card-img-wrapper">
-          <img src="contenu/PHOTO-2026-09-28-12-39-49 (3).jpg" alt="Licence Gouvernance des Collectivités Territoriales ENCEA" loading="lazy">
-        </div>
-        <div class="academic-content">
-          <div class="dept-label">Licence • Domaine MDI • 180 ECTS</div>
-          <h3 class="serif">Gouvernance des Collectivités Territoriales (GCT)</h3>
-          <p>Former des cadres de haut niveau pour l'administration publique, les communes et la gestion du développement territorial inclusif et durable.</p>
-          <div class="card-tags">
-            <span class="card-tag">Finances Publiques</span>
-            <span class="card-tag">Marchés Publics</span>
-            <span class="card-tag">Décentralisation</span>
-            <span class="card-tag">Gestion Territoriale</span>
+          <!-- DÉBOUCHÉS CLÉS -->
+          <div class="f-debouches-block">
+            <span class="f-deb-title">Débouchés professionnels clés :</span>
+            <div class="f-deb-pills">
+              <span class="f-pill">Développeur Full-Stack & Mobile</span>
+              <span class="f-pill">Ingénieur IA Junior</span>
+              <span class="f-pill">Administrateur Cloud & Réseaux</span>
+              <span class="f-pill">Analyste Cybersécurité</span>
+            </div>
           </div>
-          <div class="academic-card-actions">
-            <button type="button" class="btn-programme-modal" data-programme="gct">Consulter le Programme →</button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-programme-apply">Postuler</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- DOMAINE 2: ST -->
-    <div class="domain-group-title">
-      <span class="domain-badge">Domaine 2</span>
-      <h3 class="serif">Sciences et Technologies (ST)</h3>
-    </div>
-    <div class="academics-grid">
-      <!-- ST 1 -->
-      <div class="academic-card" data-category="st">
-        <div class="academic-card-img-wrapper">
-          <img src="contenu/PHOTO-2026-09-28-12-39-49 (1).jpg" alt="Licence Ingénierie Informatique ENCEA" loading="lazy">
-        </div>
-        <div class="academic-content">
-          <div class="dept-label">Licence • Domaine ST • 180 ECTS</div>
-          <h3 class="serif">Ingénierie Informatique</h3>
-          <p>Former des concepteurs logiciels, administrateurs réseaux et experts du Cloud et de l'IA pour bâtir les solutions numériques souveraines de l'Afrique.</p>
-          <div class="card-tags">
-            <span class="card-tag">Python & IA</span>
-            <span class="card-tag">Architecture Cloud</span>
-            <span class="card-tag">Dev Web & Mobile</span>
-            <span class="card-tag">Cybersécurité</span>
-          </div>
-          <div class="academic-card-actions">
-            <button type="button" class="btn-programme-modal" data-programme="info">Consulter le Programme →</button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-programme-apply">Postuler</a>
+          <!-- ACTION -->
+          <div class="f-card-action">
+            <button type="button" class="btn-formation-view btn-programme-modal" data-programme="info">
+              <span>Découvrir la formation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- ST 2 -->
-      <div class="academic-card" data-category="st">
-        <div class="academic-card-img-wrapper">
-          <img src="contenu/PHOTO-2026-09-28-12-39-49 (2).jpg" alt="Licence Ingénierie Génie Civil ENCEA" loading="lazy">
+      <!-- FORMATION 2 : GÉNIE CIVIL -->
+      <div class="formation-item-card">
+        <div class="f-card-media">
+          <img src="contenu/PHOTO-2026-09-28-12-39-49 (2).jpg" alt="Licence Ingénierie Génie Civil" loading="lazy">
+          <span class="f-domain-tag">Sciences & Technologies</span>
         </div>
-        <div class="academic-content">
-          <div class="dept-label">Licence • Domaine ST • 180 ECTS</div>
-          <h3 class="serif">Ingénierie Génie Civil</h3>
-          <p>Former les bâtisseurs des grandes infrastructures durables : résistance des structures, géotechnique, topographie, béton armé et conduite de chantiers.</p>
-          <div class="card-tags">
-            <span class="card-tag">Béton Armé</span>
-            <span class="card-tag">Calcul RDM</span>
-            <span class="card-tag">AutoCAD & BIM</span>
-            <span class="card-tag">Chantiers BTP</span>
+        <div class="f-card-body">
+          <h3 class="serif f-card-title">Licence Bâtiment & Génie Civil</h3>
+          <p class="f-card-summary">
+            Conception des ouvrages, calcul de structures (béton armé, charpente), topographie, modélisation BIM et pilotage de chantiers de construction durable.
+          </p>
+
+          <!-- MÉTADONNÉES CLAIRES : NIVEAU, DURÉE, DIPLÔME -->
+          <div class="f-meta-row">
+            <div class="f-meta-cell">
+              <span class="f-label">Niveau</span>
+              <strong class="f-val">Bac+3</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Durée</span>
+              <strong class="f-val">3 ans (180 ECTS)</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Diplôme</span>
+              <strong class="f-val">Diplôme d'État</strong>
+            </div>
           </div>
-          <div class="academic-card-actions">
-            <button type="button" class="btn-programme-modal" data-programme="gc">Consulter le Programme →</button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" target="_blank" rel="noopener" class="btn-programme-apply">Postuler</a>
+
+          <!-- DÉBOUCHÉS CLÉS -->
+          <div class="f-debouches-block">
+            <span class="f-deb-title">Débouchés professionnels clés :</span>
+            <div class="f-deb-pills">
+              <span class="f-pill">Conducteur de Travaux BTP</span>
+              <span class="f-pill">Projeteur / Modélisateur BIM</span>
+              <span class="f-pill">Ingénieur d'Études Structures</span>
+              <span class="f-pill">Chargé d'Affaires & Chantiers</span>
+            </div>
+          </div>
+
+          <!-- ACTION -->
+          <div class="f-card-action">
+            <button type="button" class="btn-formation-view btn-programme-modal" data-programme="gc">
+              <span>Découvrir la formation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- FORMATION 3 : MANAGEMENT DES AFFAIRES -->
+      <div class="formation-item-card">
+        <div class="f-card-media">
+          <img src="contenu/PHOTO-2026-09-28-12-39-49.jpg" alt="Licence Management des Affaires" loading="lazy">
+          <span class="f-domain-tag">Sciences Économiques & Gestion</span>
+        </div>
+        <div class="f-card-body">
+          <h3 class="serif f-card-title">Licence Management des Affaires</h3>
+          <p class="f-card-summary">
+            Former des stratèges, gestionnaires et créateurs d'entreprises capables de piloter la performance financière, commerciale et opérationnelle en Afrique.
+          </p>
+
+          <!-- MÉTADONNÉES CLAIRES : NIVEAU, DURÉE, DIPLÔME -->
+          <div class="f-meta-row">
+            <div class="f-meta-cell">
+              <span class="f-label">Niveau</span>
+              <strong class="f-val">Bac+3</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Durée</span>
+              <strong class="f-val">3 ans (180 ECTS)</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Diplôme</span>
+              <strong class="f-val">Diplôme d'État</strong>
+            </div>
+          </div>
+
+          <!-- DÉBOUCHÉS CLÉS -->
+          <div class="f-debouches-block">
+            <span class="f-deb-title">Débouchés professionnels clés :</span>
+            <div class="f-deb-pills">
+              <span class="f-pill">Gestionnaire / Contrôleur de Gestion</span>
+              <span class="f-pill">Responsable Commercial & Marketing</span>
+              <span class="f-pill">Chef de Projet Entreprise</span>
+              <span class="f-pill">Créateur de PME & Start-up</span>
+            </div>
+          </div>
+
+          <!-- ACTION -->
+          <div class="f-card-action">
+            <button type="button" class="btn-formation-view btn-programme-modal" data-programme="ma">
+              <span>Découvrir la formation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMATION 4 : GOUVERNANCE COLLECTIVITÉS -->
+      <div class="formation-item-card">
+        <div class="f-card-media">
+          <img src="contenu/PHOTO-2026-09-28-12-39-49 (3).jpg" alt="Licence Gouvernance des Collectivités Territoriales" loading="lazy">
+          <span class="f-domain-tag">Sciences Juridiques & Politiques</span>
+        </div>
+        <div class="f-card-body">
+          <h3 class="serif f-card-title">Licence Gouvernance des Collectivités Territoriales</h3>
+          <p class="f-card-summary">
+            Former les cadres de l'administration publique, des mairies et des agences de développement pour la conduite des politiques publiques et du droit local.
+          </p>
+
+          <!-- MÉTADONNÉES CLAIRES : NIVEAU, DURÉE, DIPLÔME -->
+          <div class="f-meta-row">
+            <div class="f-meta-cell">
+              <span class="f-label">Niveau</span>
+              <strong class="f-val">Bac+3</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Durée</span>
+              <strong class="f-val">3 ans (180 ECTS)</strong>
+            </div>
+            <div class="f-meta-cell">
+              <span class="f-label">Diplôme</span>
+              <strong class="f-val">Diplôme d'État</strong>
+            </div>
+          </div>
+
+          <!-- DÉBOUCHÉS CLÉS -->
+          <div class="f-debouches-block">
+            <span class="f-deb-title">Débouchés professionnels clés :</span>
+            <div class="f-deb-pills">
+              <span class="f-pill">Administrateur Territorial (Mairies/Conseils)</span>
+              <span class="f-pill">Gestionnaire des Marchés Publics</span>
+              <span class="f-pill">Coordonnateur de Projets ONG</span>
+              <span class="f-pill">Consultant en Politiques Publiques</span>
+            </div>
+          </div>
+
+          <!-- ACTION -->
+          <div class="f-card-action">
+            <button type="button" class="btn-formation-view btn-programme-modal" data-programme="gct">
+              <span>Découvrir la formation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -790,7 +877,7 @@
           <div class="sim-result-actions">
             <a id="simWhatsappBtn" href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20d'apr%C3%A8s%20le%20simulateur,%20je%20suis%20%C3%A9ligible%20%C3%A0%20la%20Bourse%20d'Excellence%20-50%%20en%20Licence%20Informatique%20&%20IA.%20Voici%20mon%20bulletin%20:" 
                target="_blank" rel="noopener" class="btn-sim-whatsapp">
-              💬 Bloquer ma Bourse par WhatsApp (+221 78 720 66 66)
+               Bloquer ma Bourse par WhatsApp (+221 78 720 66 66)
             </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6D-xojxqB0qYChm_WseroPWYDv8Hwrv59n6qkQO9-8q7mA/viewform" 
                target="_blank" rel="noopener" class="btn-sim-form">
@@ -1020,10 +1107,10 @@
       </div>
 
       <div class="pillars-nav-pills" role="tablist">
-        <button class="pillar-nav-btn active" data-pillar="ocean" role="tab">🌊 Cadre Balnéaire (Yoff Plage)</button>
-        <button class="pillar-nav-btn" data-pillar="mentorship" role="tab">🤝 Mentorat 1-pour-1</button>
-        <button class="pillar-nav-btn" data-pillar="projects" role="tab">🚀 Projets Pratiques & Hackathons</button>
-        <button class="pillar-nav-btn" data-pillar="community" role="tab">🎭 Esprit de Famille & Leadership</button>
+        <button class="pillar-nav-btn active" data-pillar="ocean" role="tab"> Cadre Balnéaire (Yoff Plage)</button>
+        <button class="pillar-nav-btn" data-pillar="mentorship" role="tab"> Mentorat 1-pour-1</button>
+        <button class="pillar-nav-btn" data-pillar="projects" role="tab"> Projets Pratiques & Hackathons</button>
+        <button class="pillar-nav-btn" data-pillar="community" role="tab"> Esprit de Famille & Leadership</button>
       </div>
 
       <div class="pillar-display-card" id="pillarDisplayCard">
@@ -1078,14 +1165,14 @@
           <div class="testimonial-author-meta">
             <h4>Fatou Ndiaye & Khady Cissé</h4>
             <span class="testimonial-filiere">Licence Ingénierie Informatique & IA</span>
-            <div class="testimonial-stars">★★★★★ <span class="stars-note">Promotion 2026</span></div>
+            <div class="testimonial-stars">Avis vérifié • Promotion 2026 <span class="stars-note">Promotion 2026</span></div>
           </div>
         </div>
         <div class="testimonial-quote-icon">“</div>
         <p class="testimonial-body">
           À l'ENCEA, on ne reste pas passifs dans un grand amphi. Dès le premier semestre, nous codons sur des projets concrets avec le mentorat d'ingénieurs. Étudier face à la plage de Yoff offre un calme et une inspiration uniques au quotidien.
         </p>
-        <div class="testimonial-badge-bottom">💻 Pôle Intelligence Artificielle</div>
+        <div class="testimonial-badge-bottom"> Pôle Intelligence Artificielle</div>
       </div>
 
       <!-- TÉMOIGNAGE 2 -->
@@ -1098,14 +1185,14 @@
           <div class="testimonial-author-meta">
             <h4>Cheikh Omar Ba</h4>
             <span class="testimonial-filiere">Licence Bâtiment & Génie Civil</span>
-            <div class="testimonial-stars">★★★★★ <span class="stars-note">Boursier d'Excellence</span></div>
+            <div class="testimonial-stars">Avis vérifié • Promotion 2026 <span class="stars-note">Boursier d'Excellence</span></div>
           </div>
         </div>
         <div class="testimonial-quote-icon">“</div>
         <p class="testimonial-body">
           Grâce à la Bourse d'Excellence (-50%), j'ai pu intégrer une école d'ingénierie d'élite sans peser sur les finances de ma famille. Les professeurs sont des praticiens de chantiers qui nous transmettent la réalité du BTP.
         </p>
-        <div class="testimonial-badge-bottom">🏗️ Pôle Génie Civil & BTP</div>
+        <div class="testimonial-badge-bottom"> Pôle Génie Civil & BTP</div>
       </div>
 
       <!-- TÉMOIGNAGE 3 -->
@@ -1118,14 +1205,14 @@
           <div class="testimonial-author-meta">
             <h4>Aminata Diallo</h4>
             <span class="testimonial-filiere">Licence Management des Affaires</span>
-            <div class="testimonial-stars">★★★★★ <span class="stars-note">Club Entrepreneuriat</span></div>
+            <div class="testimonial-stars">Avis vérifié • Promotion 2026 <span class="stars-note">Club Entrepreneuriat</span></div>
           </div>
         </div>
         <div class="testimonial-quote-icon">“</div>
         <p class="testimonial-body">
           Ce qui m'a frappée dès l'inauguration, c'est l'écoute et l'esprit de famille qui règnent ici. On nous apprend à oser entreprendre, négocier et bâtir des projets solides pour le Sénégal et l'Afrique de l'Ouest.
         </p>
-        <div class="testimonial-badge-bottom">📊 Management & Stratégie</div>
+        <div class="testimonial-badge-bottom"> Management & Stratégie</div>
       </div>
 
       <!-- TÉMOIGNAGE 4 -->
@@ -1138,14 +1225,14 @@
           <div class="testimonial-author-meta">
             <h4>Mamadou Lamine Diop</h4>
             <span class="testimonial-filiere">Licence Droit Territorial & GCT</span>
-            <div class="testimonial-stars">★★★★★ <span class="stars-note">Ambassadeur Campus</span></div>
+            <div class="testimonial-stars">Avis vérifié • Promotion 2026 <span class="stars-note">Ambassadeur Campus</span></div>
           </div>
         </div>
         <div class="testimonial-quote-icon">“</div>
         <p class="testimonial-body">
           L'ENCEA forme des cadres intègres et visionnaires. Le travail en petits groupes et les études de cas pratiques préparent directement aux concours administratifs et aux carrières dans les collectivités locales.
         </p>
-        <div class="testimonial-badge-bottom">🏛️ Gouvernance & Droit Public</div>
+        <div class="testimonial-badge-bottom"> Gouvernance & Droit Public</div>
       </div>
     </div>
 
@@ -1159,7 +1246,7 @@
       </div>
       <a href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20je%20souhaite%20%C3%A9changer%20avec%20un%20%C3%A9tudiant%20ambassadeur%20ou%20l'%C3%A9quipe%20d'orientation." 
          target="_blank" rel="noopener" class="btn-human-connect">
-        💬 Échanger Directement avec un Conseiller ou un Ambassadeur
+         Échanger Directement avec un Conseiller ou un Ambassadeur
       </a>
     </div>
   </section>
@@ -1207,21 +1294,21 @@
         </p>
         <div class="direction-commitments-grid">
           <div class="commitment-pill">
-            <span class="cp-icon">🎯</span>
+            <span class="cp-icon"></span>
             <div>
               <strong>Classes à Effectifs Maîtrisés (Max 35)</strong>
               <p>Des interactions quotidiennes et un suivi individualisé des apprentissages.</p>
             </div>
           </div>
           <div class="commitment-pill">
-            <span class="cp-icon">🤝</span>
+            <span class="cp-icon"></span>
             <div>
               <strong>Mentorat 1-pour-1 & Écoute Active</strong>
               <p>Un tuteur académique dédié pour guider l'étudiant tout au long de son cursus.</p>
             </div>
           </div>
           <div class="commitment-pill">
-            <span class="cp-icon">💡</span>
+            <span class="cp-icon"></span>
             <div>
               <strong>Incubateur & Entrepreneuriat Pratique</strong>
               <p>Coaching personnalisé pour concrétiser des projets d'entreprises réels.</p>
@@ -1568,18 +1655,18 @@
         <button class="hdp-close-btn" id="hdpCloseBtn" aria-label="Fermer la boîte de dialogue">✕</button>
       </div>
       <div class="hdp-body">
-        <p class="hdp-welcome">Bonjour ! 👋 Vous avez une question sur les Licences ou les Bourses d'Excellence (-50%) ? Nous sommes là pour vous aider.</p>
+        <p class="hdp-welcome">Bonjour !  Vous avez une question sur les Licences ou les Bourses d'Excellence (-50%) ? Nous sommes là pour vous aider.</p>
         <div class="hdp-actions">
           <a href="https://wa.me/221787206666?text=Bonjour%20ENCEA,%20je%20souhaite%20des%20informations%20sur%20les%20Licences%20et%20Bourses%20d'Excellence." target="_blank" rel="noopener" class="hdp-action-btn primary">
-            <span>💬 Échanger sur WhatsApp Direct</span>
+            <span> Échanger sur WhatsApp Direct</span>
             <small>+221 78 720 66 66 (Admissions)</small>
           </a>
           <a href="#simulateurBourse" class="hdp-action-btn secondary" id="hdpSimLink">
-            <span>🎓 Simuler ma Bourse (-50%)</span>
+            <span> Simuler ma Bourse (-50%)</span>
             <small>Calcul immédiat en 15 secondes</small>
           </a>
           <a href="#contact" class="hdp-action-btn secondary" id="hdpContactLink">
-            <span>🏛️ Planifier une Visite du Campus</span>
+            <span> Planifier une Visite du Campus</span>
             <small>Yoff Apécsy 1, face à la plage BCAO</small>
           </a>
         </div>
@@ -1624,7 +1711,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=13.0"></script>
+  <script src="script.js?v=14.0"></script>
 </body>
 
 </html>

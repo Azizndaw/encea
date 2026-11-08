@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formSuccess.style.display = 'block';
         formSuccess.innerHTML = `
           <div style="background:#eaf8ef; border:1px solid #27ae60; border-radius:8px; padding:24px; text-align:center;">
-            <div style="font-size:2.5rem; margin-bottom:8px;">✅</div>
+            <div style="font-size:2.5rem; margin-bottom:8px;"></div>
             <h4 style="color:#27ae60; font-size:1.3rem; margin-bottom:10px;">Merci ${nom} ! Votre demande a été reçue.</h4>
             <p style="color:#333; margin-bottom:18px;">
               Un conseiller d'orientation ENCEA vous contactera sous 24h au <strong>${telephone}</strong> pour répondre à vos questions sur <em>${filiere}</em>.
