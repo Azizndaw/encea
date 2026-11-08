@@ -627,22 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // ===== 13. ANIMATIONS AU SCROLL (SCROLL REVEAL / AOS STYLE) =====
-  const revealElements = document.querySelectorAll('.news-card, .date-card, .academic-card, .contact-item-card, .partner-pillar-card, .scholarship-card');
-  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    revealElements.forEach(el => {
-      el.classList.add('reveal-on-scroll');
-      revealObserver.observe(el);
-    });
-  }
+  // ===== 13. ANIMATIONS AU SCROLL (SANS DISPARITION DE CONTENU) =====
+  // Tous les elements restent 100% visibles et lisibles pour garantir la clarte du texte.
 
 });
